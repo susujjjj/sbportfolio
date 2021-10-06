@@ -14,7 +14,7 @@ import Home from "./pages/home";
 
 //routes
 const routes = [
-  { path: "/", name: "Home", Component: Home },
+  { path: "/sbportfolio", name: "Home", Component: Home },
   { path: "/projects", name: "caseStudies", Component: CaseStudies },
   { path: "/approach", name: "approach", Component: Approach },
   { path: "/services", name: "services", Component: Services },
