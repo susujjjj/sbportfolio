@@ -14,6 +14,11 @@ const About = () => {
             저의 다양한 경험과 배경은 창의적 사고를 가능하게 하고 다른 부서와의
             소통 능력을 향상합니다.
           </h3>
+          <div>
+             Skills - **HTML, CSS** - **JavaScript** - **TypeScript** -
+            **React.js** - **React Hooks** - **Use Reducer & Use Context** -
+            **SCSS** - **Styled-component** - **Redux** - **MaterialUI**
+          </div>
         </div>
       </div>
     </div>

@@ -145,8 +145,21 @@ html {
   width: 100%;
   background: $white;
   .row {
+    // display: block;
     display: flex;
     align-items: center;
+    // .h3  {
+    //   display: flex;
+    //   align-items: center;
+    //   width: 100vw;
+    //   height: 60rem;
+    //   border: 1px solid blue;
+    // }
+    .projectpageLayout {
+      padding-top: 30rem;
+      width: 100vw;
+      // border: 1px solid red;
+    }
   }
 }
 
