@@ -1,0 +1,31 @@
+.about-bannerMain{
+    margin-top: -20rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    .about-bannerMain-lft {
+        width: 100vw;
+        height: 70vh;
+        border: 1px solid red;
+        display: table-cell;
+        vertical-align: middle;
+        .textWrapper{
+            padding: 1.2rem 2rem;
+        }
+    }
+    .paragraphAnimation {
+        margin-top: 10px;
+    }
+    .aboutme-intro {
+          display: table-cell;
+        vertical-align: middle;
+        height: 20rem;
+          padding: 1.2rem 2rem;
+       
+        border: 1px solid orangered;
+    }
+    .textWrapper2{
+          padding: 1.2rem 2rem;
+    }
+}

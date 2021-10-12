@@ -103,79 +103,21 @@ const CaseStudies = () => {
               </section>
               <div className="content">
                 <div className="container1">
-                  <main className="content-main">
+                  {/* <main className="content-main"> */}
                     {panels.map(({ title, subtitle }) => (
                       <div key={panels.index}>
                         <h2>{title}</h2>
                         <p>{subtitle}</p>
                       </div>
                     ))}
-                  </main>
+                  {/* </main> */}
                 </div>
               </div>
             </div>
-
-            {/* <div className="projectpageLayout">
-              <h1> Project </h1>
-              <h2> CHANEL KOREA</h2>
-              <h3>website</h3>
-
-              <button>
-                <a
-                  href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=4s"
-                  target="_blank"
-                >
-                  VIEW VIDEO
-                </a>
-              </button>
-              <button>
-                <a
-                  href="https://www.notion.so/chloej/Portfolio-b2c79fd0492b445e95d3f66c239bb0b0"
-                  target="_blank"
-                >
-                  VIEW PROJECT DESCRIPTION
-                </a>
-              </button>
-            </div> */}
           </div>
         </div>
       </div>
 
-      {/* <section className="bannerMain">
-          <div className="bannerMain-lft">
-            <div className="bannerMain-lft__inner">
-              <h2>
-                <div className="textWrapper">
-                  <span className="text">My</span>
-                </div>
-                <div className="textWrapper">
-                  <span className="text">Projects</span>
-                </div>
-              </h2>
-              <p className="paragraphAnimation">
-                We provide seemeless integration with <br /> multiple
-                devices so that you can take <br /> notes even better.
-              </p>
-            </div>
-            <button className="btn-primary">request access</button>
-          </div>
-          <div className="bannerMain-rgt">
-    
-          </div>
-        </section>
-        <div className="content">
-          <div className="container1">
-            <main className="content-main">
-              {panels.map(({ title, subtitle }) => (
-                <div key={panels.index}>
-                  <h2>{title}</h2>
-                  <p>{subtitle}</p>
-                </div>
-              ))}
-            </main>
-          </div>
-  
-      </div> */}
     </>
   );
 };
