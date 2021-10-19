@@ -1,88 +1,138 @@
-// // :root {
-// //   --background-color: #e6ebee;
-// //   --blue-main: #2d3d8b;
-// //   --btn-color: #65b9ce;
-// //   --text-color: #3e3e3e;
-// // }
-// // a{
-// //   text-decoration: none;
-// //   color: #5a5a5a;
-// // }
-// .container1 {
-//   max-width: 1440px; 
-//   margin: auto;
-// }
-// // body {
-// //   background-color: var(--background-color);
-// // }
-// .bannerMain {
-//   height: 100vh;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .bannerMain-lft {
-//   flex-basis: 35%;
-//   margin-right: 50px;
-// }
-// .bannerMain-lft h2 {
-//   color: var(--blue-main);
-//   font-size: 47px;
-//   text-transform: uppercase;
-//   font-weight: 800;
-// }
-// .bannerMain .bannerMain-lft p {
-//   color: var(--text-color);
-//   font-size: 25px;
-// }
-// .bannerMain .bannerMain-rgt {
-//   margin-left: 50px;
-// }
-// .btn-primary {
-//   padding: 17px 20px;
-//   border: none;
-//   background-color: var(--btn-color);
-//   border-radius: 4px;
-//   font-size: 17px;
-//   text-transform: uppercase;
-//   font-weight: bolder;
-//   color: #ffffff;
-//   cursor: pointer;
-// }
-// nav {
-//   display: flex;
-//   align-items: center;
-//   // background-color: #ffffff;
-//   padding: 0px 30px;
-//   position: absolute;
-//   top:0;
-//   left:0;
-//   right:0;
-// }
-// nav .nav-items ul li {
-//   display: inline;
-//   padding-right: 20px;
-//   font-size: 17px;
-//   font-weight: 500;
-// }
-// nav .nav-logo{
-//   font-weight: 800;
-//   color: var(--blue-main);
-//   font-size: 19px;;
-// }
-// .textWrapper {
-//   background-color: transparent;
-//   overflow: hidden;
-//   height: 50px;
-// }
-// .content{
-//   // background-color: #ffffff;
-//   padding: 30px 0px;
-// }
-// .content-main > div{
-//   margin-bottom: 90px;
-// }
-// .App-section{
-//   margin-top: 80px;
-// }
+.projectBannerMain{
+    display: block;
+    margin-top: -10rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid darkcyan;
+    .bannerMainWrapper {
+        display: block;
+        width: 40rem;
+        height: 50vh;
+        margin-top: -5rem;
+        padding: 1.2rem 7rem;
+        border: 1px solid red;
+        
+        .projectDescription {
+            border: 1px solid yellow;
+            .imgWrapper{
+                width: 30rem;
+                img {
+                    width: 100%;
+                }
+            }
+    }
+    }
+    .paragraphAnimation {
+        margin-top: 10px;
+    }
+    .intro {
+          display: table-cell;
+        vertical-align: middle;
+        height: 20rem;
+          padding: 1.2rem 2rem;
+       
+        // border: 1px solid orangered;
+    }
+    .textWrapper2{
+          padding: 1.2rem 2rem;
+    }
+   
+}
+
+
+.projectBannerMain2{
+    display: flex;
+
+    .textBox {
+            display: flex;
+              justify-content: space-between;
+              width: 80rem;
+              height: 80px;
+              
+        .text{
+          display: flex;
+          justify-content: space-between;
+       
+          border: 1px solid saddlebrown;
+          width: 100px;
+          height: 30px;
+          
+      }
+      .title {
+          display: block;     
+          width: 150px;
+          height: 30px;
+            border: 1px solid saddlebrown;
+      }
+    }
+    // display: block;
+    // margin-top: -10rem;
+    // width: 100vw;
+    // height: 100vh;
+    // background-color: #fff;
+    // color: #222;
+    // border: 1px solid darkcyan;
+    
+  .bannerMainWrapper2 {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+        // position: relative;
+        // display: flex;
+        // justify-content: flex-end;
+        // width: 70vw;
+        // height: 50vh;
+        // margin-top: -5rem;
+        // padding: 1.2rem 7rem;
+    //     .text {
+    //         border: 1px solid green;
+    //         display:block;
+
+    //     }
+    //     .title { 
+    //          border: 1px solid green;
+    //         display:block;
+    //     }
+    //     .projectDescription {
+            
+    //         border: 1px solid yellow;
+    //     .imgWrapper{
+    //          display: flex;
+    //     justify-content: flex-end;
+    //          position: relative;
+    //             width: 30rem;
+    //             img {
+    //                 width: 100%;
+    //             }
+    //         }      
+    //         .videoBtnWrapper {
+    //             display: block;
+    //         }
+    // }
+     
+    }
+
+    
+    .paragraphAnimation {
+        margin-top: 10px;
+    }
+    .intro {
+          display: table-cell;
+        vertical-align: middle;
+        height: 20rem;
+          padding: 1.2rem 2rem;
+       
+        // border: 1px solid orangered;
+    }
+    .textWrapper2{
+          padding: 1.2rem 2rem;
+    }
+   
+}
+
+
+
+
+

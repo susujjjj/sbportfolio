@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import '../styles/components/project.scss'
 import { gsap, TimelineLite, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Channel from '../assets/channel.png'
+import Airbnb from "../assets/airbnb.gif";
 gsap.registerPlugin(ScrollTrigger);
 
 const panels = [
@@ -78,46 +80,86 @@ const CaseStudies = () => {
   return (
     <>
       <div className="page">
-        <div className="container">
+        <div className="aboutcontainer">
           <div className="row">
             <div className="projectpageLayout">
-              <section className="bannerMain">
-                <div className="bannerMain-lft">
-                  <div className="bannerMain-lft__inner">
-                    <h2>
-                      <div className="textWrapper">
-                        <span className="text">My</span>
-                      </div>
-                      <div className="textWrapper">
-                        <span className="text">Projects</span>
-                      </div>
-                    </h2>
-                    <p className="paragraphAnimation">
-                      We provide seemeless integration with <br /> multiple
-                      devices so that you can take <br /> notes even better.
-                    </p>
+              <section className="projectBannerMain">
+                {/* <div className="about-bannerMain-lft"> */}
+                <div className="bannerMainWrapper">
+                  <h2>
+                    <span className="text">Projects</span>
+                  </h2>
+                  <div className="title"> 샤넬 프로젝트 </div>
+
+                  <div className="projectDescription">
+                    <div className="imgWrapper">
+                      <img src={Channel} alt="img" />
+                    </div>
+
+                    <div className="videoBtnWrapper">
+                      <button>
+                        {" "}
+                        <a
+                          href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
+                          target="_blank"
+                        >
+                          VIEW VIDEO
+                        </a>
+                      </button>
+                      <button>
+                        <a
+                          href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
+                          target="_blank"
+                        >
+                          {" "}
+                          VIEW PROJECT
+                        </a>
+                      </button>
+                    </div>
                   </div>
-                  <button className="btn-primary">request access</button>
+
+                  <div className="intro"></div>
                 </div>
-                <div className="bannerMain-rgt"></div>
               </section>
-              <div className="content">
-                <div className="container1">
-                  {/* <main className="content-main"> */}
-                    {panels.map(({ title, subtitle }) => (
-                      <div key={panels.index}>
-                        <h2>{title}</h2>
-                        <p>{subtitle}</p>
-                      </div>
-                    ))}
-                  {/* </main> */}
+              {/** */}
+              <section className="projectBannerMain2">
+                <div className="textBox">
+                  <h2 className="text">Projects</h2>
+                  <div className="title"> 에어비앤비 프로젝트 </div>
                 </div>
-              </div>
+                <div className="bannerMainWrapper2">
+                  <div className="projectDescription">
+                    <div className="imgWrapper">
+                      <img src={Airbnb} alt="img" />
+                    </div>
+
+                    <div className="videoBtnWrapper">
+                      <button>
+                        <a
+                          href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                          target="_blank"
+                        >
+                          VIEW VIDEO
+                        </a>
+                      </button>
+                      <button>
+                        <a
+                          href="https://github.com/wecode-bootcamp-korea/9-WEnB-frontend"
+                          target="_blank"
+                        >
+                          VIEW PROJECT
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="intro"></div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };

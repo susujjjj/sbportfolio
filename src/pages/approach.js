@@ -61,22 +61,32 @@ const Approach = () => {
         <div className="row">
           <div className="projectpageLayout">
             <section className="contact-bannerMain">
-              <div className="about-bannerMain-lft">
-                <h2 className="textWrapper">
-                    <span className="text">About page</span>
-                </h2>
-                <div className="aboutme-intro">
-                  <p className="paragraphAnimation">
-                    <h3>
-                      <h3>This is the approach page</h3>
+              {/* <div className="about-bannerMain-lft"> */}
+              <h2 className="textWrapper">
+                <span className="text">Contact Me</span>
+              </h2>
+              <div className="aboutme-intro">
+                <p className="paragraphAnimation">
+                  <h3>
+                    <div className="infoWrapper">
                       <p>EMAIL chloejjjj@naver.com</p>
+                    </div>
+                    <div className="infoWrapper">
                       <p>PHONE 010 5637 6381</p>
+                    </div>
+                    <div className="infoWrapper">
                       <p>BLOG velog.io/@rhftnqls</p>
+                    </div>
+                    <div className="infoWrapper">
                       <p>GITHUB github.com/susujjjj</p>
-                    </h3>
-                  </p>
-                </div>
+                    </div>
+                    <div className="infoWrapper">
+                      <p>LinkedIn linkedin.com/in/subeen-jeong-28a477150/</p>
+                    </div>
+                  </h3>
+                </p>
               </div>
+              {/* </div> */}
               <div className="textWrapper2">
                 <div className="container1"></div>
               </div>

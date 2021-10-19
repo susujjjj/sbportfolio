@@ -4,26 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import '../styles/components/about.scss'
 gsap.registerPlugin(ScrollTrigger);
 
-const panels = [
-  {
-    title: "Architecto aliquam",
-    subtitle:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, ea.",
-  },
-  {
-    title: "Ceritatis placeat",
-    subtitle:
-      "Dignissimos placeat cupiditate perferendis eaque praesentium similique officia dolore?",
-  },
-  {
-    title: "Vitae voluptates",
-    subtitle:
-      "In ullam et nulla repudiandae praesentium, laboriosam quas tempore fuga asperiores eveniet amet.",
-  },
-];
-
 const About = () => {
-
    let t1 = new TimelineLite({ delay: 0.3 });
    useEffect(() => {
      t1.from(
@@ -96,32 +77,35 @@ const About = () => {
                     <div className="aboutme-intro">
                       <p className="paragraphAnimation">
                         <h3>
-                          저는 끊임없이 배우고 성장하는 polymath를 꿈꾸고
+                          저는 끊임없이 배우고 성장하는 개발자를 꿈꾸고
                           있습니다. <br />
-                          새로운 기술을 습득하는 것에 빠르며, 디자인 경험을
-                          바탕으로 <br />
+                          새로운 기술을 습득하는 것을 좋아하며 <br />
                           UI/UX 관점을 고려하며 확장 가능한 웹 애플리케이션에
                           대해 고민합니다.
                           <br />
-                          저의 다양한 경험과 배경은 창의적 사고를 가능하게 하고
-                          다른 부서와의 소통 능력을 향상합니다.
+                          업무적, 업무 외적으로 더 나은 사람이 되기 위해
+                          노력하고자 합니다.
                         </h3>
                       </p>
                     </div>
                   </div>
                   {/* <button className="btn-primary">request access</button> */}
                 </div>
-            
+
                 <div className="textWrapper2">
                   <div className="container1">
-                    {/* <main className="content-main"> */}
-                    {panels.map(({ title, subtitle }) => (
-                      <div key={panels.index}>
-                        <h2>{title}</h2>
-                        <p>{subtitle}</p>
-                      </div>
-                    ))}
-                    {/* </main> */}
+                  
+
+                    <div>
+                      <h2>교육</h2>
+                      <p>
+                        중영학과 대외한어학사 - 상해외국어대학교 [2014.09 -
+                        2018.09]
+                      </p>
+                      <p>2020 위코드 9기 [2020.05 - 2018.07]</p>
+                      <p>CherGround 인턴 협업 [2020.07 - 2018.08]</p>
+                    </div>
+
                   </div>
                 </div>
               </section>
@@ -130,22 +114,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* <h3>
-            저는 끊임없이 배우고 성장하는 polymath를 꿈꾸고 있습니다. <br />
-            새로운 기술을 습득하는 것에 빠르며, 디자인 경험을 바탕으로 <br />
-            UI/UX 관점을 고려하며 확장 가능한 웹 애플리케이션에 대해 고민합니다.
-            <br />
-            저의 다양한 경험과 배경은 창의적 사고를 가능하게 하고 다른 부서와의
-            소통 능력을 향상합니다.
-          </h3>
-          <div>
-             Skills - **HTML, CSS** - **JavaScript** - **TypeScript** -
-            **React.js** - **React Hooks** - **Use Reducer & Use Context** -
-            **SCSS** - **Styled-component** - **Redux** - **MaterialUI**
-          </div> */}
-      {/* </div>
-      </div>
-    </div> */}
+    
     </>
   );
 };
