@@ -98,7 +98,6 @@ const CaseStudies = () => {
 
                     <div className="videoBtnWrapper">
                       <button>
-                        {" "}
                         <a
                           href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
                           target="_blank"
@@ -111,7 +110,6 @@ const CaseStudies = () => {
                           href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
                           target="_blank"
                         >
-                          {" "}
                           VIEW PROJECT
                         </a>
                       </button>
@@ -134,22 +132,57 @@ const CaseStudies = () => {
                     </div>
 
                     <div className="videoBtnWrapper">
-                      <button>
+                      {/* <button>
                         <a
                           href="https://www.youtube.com/watch?v=28Q003gHF4Q"
                           target="_blank"
                         >
                           VIEW VIDEO
                         </a>
-                      </button>
-                      <button>
+                      </button> */}
+
+                      <div className="buttonBox">
+                        <button
+                          type="submit"
+                          id="submit"
+                          className="button"
+                          // onClick={this.submitLogin}
+                        >
+                          <a
+                            href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                            target="_blank"
+                          >
+                            <div className="btnWrapper">
+                              <div id="signinbox"> VIEW VIDEO</div>
+                            </div>
+                          </a>
+                        </button>
+                        <button
+                          type="submit"
+                          id="submit"
+                          className="button"
+                          // onClick={this.submitLogin}
+                        >
+                          <a
+                            href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                            target="_blank"
+                          >
+                            <div className="btnWrapper">
+                              <div id="signinbox">VIEW PROJECT</div>
+                            </div>
+                          </a>
+                        </button>
+                      </div>
+
+                      {/** */}
+                      {/* <button>
                         <a
                           href="https://github.com/wecode-bootcamp-korea/9-WEnB-frontend"
                           target="_blank"
                         >
                           VIEW PROJECT
                         </a>
-                      </button>
+                      </button> */}
                     </div>
                   </div>
 
