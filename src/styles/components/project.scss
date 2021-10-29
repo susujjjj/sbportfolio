@@ -1,155 +1,85 @@
 .projectBannerMain{
     display: block;
     margin-top: -10rem;
-    width: 100vw;
-    height: 100vh;
+    width:100%;
+    height: 55rem;
     background-color: #fff;
     color: #222;
-    border: 1px solid darkcyan;
     .bannerMainWrapper {
-        display: block;
-        width: 40rem;
-        height: 50vh;
-        margin-top: -5rem;
-        padding: 1.2rem 7rem;
-        border: 1px solid red;
-        
-        .projectDescription {
-            border: 1px solid yellow;
-            .imgWrapper{
-                width: 30rem;
-                img {
-                    width: 100%;
-                }
-            }
-
-
-  }
+      display: block;
+      width: 40rem;
+      height: 50vh;
+      margin-top: -5rem;
+      padding: 1.2rem 7rem;
+    .projectDescription {
+      .imgWrapper{
+        width: 30rem;
+        img {
+            width: 100%;
+        }
+      }
+    }
 		
     }
     .paragraphAnimation {
         margin-top: 10px;
     }
     .intro {
-          display: table-cell;
-        vertical-align: middle;
-        height: 20rem;
-          padding: 1.2rem 2rem;
-       
-        // border: 1px solid orangered;
+      display: table-cell;
+      vertical-align: middle;
+      height: 20rem;
+      padding: 1.2rem 2rem;
     }
     .textWrapper2{
           padding: 1.2rem 2rem;
     }
-   
 }
 
-
 .projectBannerMain2{
-    display: flex;
-
+    width: 100%;
     .textBox {
-            display: flex;
-              justify-content: space-between;
-              width: 80rem;
-              height: 80px;
-              
-        .text{
-          display: flex;
-          justify-content: space-between;
-       
-          border: 1px solid saddlebrown;
-          width: 100px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      height: 8rem;
+      .title { 
+          width: 10rem;
           height: 30px;
-          
-      }
-      .title {
-          display: block;     
-          width: 150px;
-          height: 30px;
-            border: 1px solid saddlebrown;
       }
     }
-    // display: block;
-    // margin-top: -10rem;
-    // width: 100vw;
-    // height: 100vh;
-    // background-color: #fff;
-    // color: #222;
-    // border: 1px solid darkcyan;
+    }
+
     
   .bannerMainWrapper2 {
       position: relative;
       display: flex;
-      justify-content: flex-end;
-        // position: relative;
-        // display: flex;
-        // justify-content: flex-end;
-        // width: 70vw;
-        // height: 50vh;
-        // margin-top: -5rem;
-        // padding: 1.2rem 7rem;
-    //     .text {
-    //         border: 1px solid green;
-    //         display:block;
-
-    //     }
-    //     .title { 
-    //          border: 1px solid green;
-    //         display:block;
-    //     }
-    //     .projectDescription {
-            
-    //         border: 1px solid yellow;
-    //     .imgWrapper{
-    //          display: flex;
-    //     justify-content: flex-end;
-    //          position: relative;
-    //             width: 30rem;
-    //             img {
-    //                 width: 100%;
-    //             }
-    //         }      
-    //         .videoBtnWrapper {
-    //             display: block;
-    //         }
-    // }
-     
+      justify-content: flex-end;   
+      margin-top: -13rem;
+      margin-bottom: 10rem;
+      .projectDescription {
+      }
     }
-
-    
     .paragraphAnimation {
-        margin-top: 10px;
+      margin-top: 10px;
     }
     .intro {
-          display: table-cell;
-        vertical-align: middle;
-        height: 20rem;
-          padding: 1.2rem 2rem;
-       
-        // border: 1px solid orangered;
+      display: table-cell;
+      vertical-align: middle;
+      height: 20rem;
+      padding: 1.2rem 2rem;
     }
     .textWrapper2{
-          padding: 1.2rem 2rem;
+      padding: 1.2rem 2rem;
     }
-   
-}
-
-
-
-
-
-
 
     .buttonBox {
       display : flex;
-			#submit {
+			#button {
 				background-color: #000000;
 				margin: 2rem 2rem 0 0;
 				width: 10rem;
 				height: 50px;
 				border: 1px solid #000000;
-        
 				.btnWrapper {
 					color: #fff;
 					font-size: 11px;
@@ -162,7 +92,6 @@
 					align-items: center;
 					justify-content: center;
 					height: 100%;
-
 					#signinbox {
 						margin-top: 2%;
 						height: 35%;

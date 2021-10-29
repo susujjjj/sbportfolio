@@ -58,10 +58,6 @@ const About = () => {
 
   return (
     <>
-      {/* // <div className="page">
-    //   <div className="container">
-    //     <div className="row">
-    //       <h3>This is the About page</h3> */}
       <div className="page">
         <div className="aboutcontainer">
           <div className="row">
@@ -89,13 +85,9 @@ const About = () => {
                       </p>
                     </div>
                   </div>
-                  {/* <button className="btn-primary">request access</button> */}
                 </div>
-
                 <div className="textWrapper2">
                   <div className="container1">
-                  
-
                     <div>
                       <h2>교육</h2>
                       <p>

@@ -97,57 +97,49 @@ const CaseStudies = () => {
                     </div>
 
                     <div className="videoBtnWrapper">
-                      <button>
-                        <a
-                          href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
-                          target="_blank"
-                        >
-                          VIEW VIDEO
-                        </a>
-                      </button>
-                      <button>
-                        <a
-                          href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
-                          target="_blank"
-                        >
-                          VIEW PROJECT
-                        </a>
-                      </button>
+                      <div className="buttonBox">
+                        <button type="button" id="button" className="button">
+                          <a
+                            href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
+                            target="_blank"
+                          >
+                            <div className="btnWrapper">
+                              <div id="signinbox"> VIEW VIDEO</div>
+                            </div>
+                          </a>
+                        </button>
+                        <button type="button" id="button" className="button">
+                          <a
+                            href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
+                            target="_blank"
+                          >
+                            <div className="btnWrapper">
+                              <div id="signinbox">VIEW PROJECT</div>
+                            </div>
+                          </a>
+                        </button>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="intro"></div>
                 </div>
               </section>
               {/** */}
               <section className="projectBannerMain2">
-                <div className="textBox">
-                  <h2 className="text">Projects</h2>
-                  <div className="title"> 에어비앤비 프로젝트 </div>
-                </div>
                 <div className="bannerMainWrapper2">
                   <div className="projectDescription">
+                    <div className="textBox">
+                      <div className="title">
+                        <h2 className="text">Projects</h2>
+                        <p>에어비앤비 프로젝트 </p>
+                      </div>
+                    </div>
                     <div className="imgWrapper">
                       <img src={Airbnb} alt="img" />
                     </div>
 
                     <div className="videoBtnWrapper">
-                      {/* <button>
-                        <a
-                          href="https://www.youtube.com/watch?v=28Q003gHF4Q"
-                          target="_blank"
-                        >
-                          VIEW VIDEO
-                        </a>
-                      </button> */}
-
                       <div className="buttonBox">
-                        <button
-                          type="submit"
-                          id="submit"
-                          className="button"
-                          // onClick={this.submitLogin}
-                        >
+                        <button type="button" id="button" className="button">
                           <a
                             href="https://www.youtube.com/watch?v=28Q003gHF4Q"
                             target="_blank"
@@ -157,12 +149,7 @@ const CaseStudies = () => {
                             </div>
                           </a>
                         </button>
-                        <button
-                          type="submit"
-                          id="submit"
-                          className="button"
-                          // onClick={this.submitLogin}
-                        >
+                        <button type="button" id="button" className="button">
                           <a
                             href="https://www.youtube.com/watch?v=28Q003gHF4Q"
                             target="_blank"
@@ -173,19 +160,8 @@ const CaseStudies = () => {
                           </a>
                         </button>
                       </div>
-
-                      {/** */}
-                      {/* <button>
-                        <a
-                          href="https://github.com/wecode-bootcamp-korea/9-WEnB-frontend"
-                          target="_blank"
-                        >
-                          VIEW PROJECT
-                        </a>
-                      </button> */}
                     </div>
                   </div>
-
                   <div className="intro"></div>
                 </div>
               </section>
