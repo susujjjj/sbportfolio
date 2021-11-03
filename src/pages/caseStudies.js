@@ -104,7 +104,7 @@ const CaseStudies = () => {
                             target="_blank"
                           >
                             <div className="btnWrapper">
-                              <div id="signinbox"> VIEW VIDEO</div>
+                              <div id="signinbox">VIEW VIDEO</div>
                             </div>
                           </a>
                         </button>
