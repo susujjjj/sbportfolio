@@ -8,5 +8,10 @@
     }
     .infoWrapper{
         padding: .2rem .2rem;
+        a{
+            text-decoration: none;
+        }
+        a:link { color: #222; }
+        a:visited { color: #8c59b9; }
     }
 }

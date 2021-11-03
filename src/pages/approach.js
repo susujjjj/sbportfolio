@@ -69,19 +69,46 @@ const Approach = () => {
                 <p className="paragraphAnimation">
                   <h3>
                     <div className="infoWrapper">
-                      <p>EMAIL chloejjjj@naver.com</p>
+                      <p>
+                        <a href="mailto:﻿chloejjjj@naver.com">
+                          EMAIL chloejjjj@naver.com
+                        </a>
+                      </p>
                     </div>
                     <div className="infoWrapper">
                       <p>PHONE 010 5637 6381</p>
                     </div>
                     <div className="infoWrapper">
-                      <p>BLOG velog.io/@rhftnqls</p>
+                      <p>
+                        <a href="https://github.com/susujjjj" target="_blank">
+                          <div className="btnWrapper">
+                            <div id="signinbox">BLOG velog.io/@rhftnqls</div>
+                          </div>
+                        </a>
+                      </p>
                     </div>
                     <div className="infoWrapper">
-                      <p>GITHUB github.com/susujjjj</p>
+                      <p>
+                        <a href="https://github.com/susujjjj" target="_blank">
+                          <div className="btnWrapper">
+                            <div id="signinbox">GITHUB github.com/susujjjj</div>
+                          </div>
+                        </a>
+                      </p>
                     </div>
                     <div className="infoWrapper">
-                      <p>LinkedIn linkedin.com/in/subeen-jeong-28a477150/</p>
+                      <p>
+                        <a
+                          href="https://www.linkedin.com/in/subeen-jeong-28a477150/"
+                          target="_blank"
+                        >
+                          <div className="btnWrapper">
+                            <div id="signinbox">
+                              LinkedIn linkedin.com/in/subeen-jeong-28a477150/
+                            </div>
+                          </div>
+                        </a>
+                      </p>
                     </div>
                   </h3>
                 </p>
