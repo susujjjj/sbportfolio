@@ -83,7 +83,6 @@ html {
       }
       &:nth-child(2) {
         left: 33.333%;
-        // background: burlywood;
         @include media("<=tablet") {
           display: none;
         }
@@ -145,24 +144,12 @@ html {
   width: 100%;
   background: $white;
   .row {
-    // display: block;
     display: flex;
     align-items: center;
-    // .h3  {
-    //   display: flex;
-    //   align-items: center;
-    //   width: 100vw;
-    //   height: 60rem;
-    //   border: 1px solid blue;
-    // }
     .projectpageLayout {
       padding-top: 30rem;
       width: 100vw;
-      // border: 1px solid red;
+      height: 100%;     
     }
   }
 }
-
-
-//gsap을 사용하면 애니메이션의 너비를 왼쪽에서 오른쪽으로 전환하고 있고
-//아래똑 오른쪽고수하기

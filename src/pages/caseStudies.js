@@ -90,12 +90,10 @@ const CaseStudies = () => {
                     <span className="text">Projects</span>
                   </h2>
                   <div className="title"> 샤넬 프로젝트 </div>
-
                   <div className="projectDescription">
                     <div className="imgWrapper">
                       <img src={Channel} alt="img" />
                     </div>
-
                     <div className="videoBtnWrapper">
                       <div className="buttonBox">
                         <button type="button" id="button" className="button">
@@ -123,7 +121,6 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </section>
-              {/** */}
               <section className="projectBannerMain2">
                 <div className="bannerMainWrapper2">
                   <div className="projectDescription">
