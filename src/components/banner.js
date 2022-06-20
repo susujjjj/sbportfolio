@@ -11,7 +11,7 @@ const Banner = () => {
               <span> front-end developer</span>
             </div>
             <div className="line">
-              <span>subin jeong</span>
+              <span>Chloe Jeong</span>
             </div>
           </h2>
           <div className="btn-row">

@@ -70,13 +70,13 @@ const Approach = () => {
                   <h3>
                     <div className="infoWrapper">
                       <p>
-                        <a href="mailto:﻿chloejjjj@naver.com">
-                          EMAIL chloejjjj@naver.com
+                        <a href="mailto:﻿chlojeong@gmail.com">
+                          EMAIL chlojeong@gmail.com
                         </a>
                       </p>
                     </div>
                     <div className="infoWrapper">
-                      <p>PHONE 010 5637 6381</p>
+                      <p>PHONE +82 10 5637 6381</p>
                     </div>
                     <div className="infoWrapper">
                       <p>

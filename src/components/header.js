@@ -79,7 +79,7 @@ const Header = ({ history, dimensions }) => {
         <div className="row v-center space-between">
           <div className="logo">
             <NavLink to="/sbportfolio" exact>
-              Subin's Portfolio
+              Chloe's Portfolio
             </NavLink>
           </div>
           <div className="nav-toggle">
