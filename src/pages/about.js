@@ -70,128 +70,95 @@ const About = () => {
                         <span className="text">About page</span>
                       </div>
                     </h2>
-                    {/* <div className="aboutme-intro"> */}
 
-                    <section id="intro">
-                              
+                    <section id="intro" style={{paddingLeft: '30px'}}>
                       <div class="main-wrapper">
                         <div className="text">
-                        <h2 className="heading--uppercase--inline">
-                          <span className="split">
-                            {/* 여기서부터 네이밍 스타일링  */}
-                            <div id="model-wrapper" className="content">
-                              <canvas className="webgl" data-engine="three.js r137" 
-                              width="1052" height="898" 
-                              style={{width: '526px', height: '449px'}}
-                              />
-                              <div class="caption item-fade">
-                                <p className="h2--uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
+                          <h2 className="heading--uppercase--inline">
+                            <span className="split">
+                              {/* 여기서부터 네이밍 스타일링  */}
+                              <div id="model-wrapper" className="content">
+                                <div class="caption item-fade">
+                                  <p className="h2--uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
                                     <span className="line">Hello. I am </span>
-                                    {/* <div className="symbol--right">Patrick David</div> */}
-                                  <div style={{ fontSize: '40px'}}>Patrick David</div>
-                                  <svg width="104" height="54" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "150px", marginTop: "-60px"}}>
-                                    <path d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879" stroke="#F3DBC7" stroke-width="3" fill="none" fill-rule="evenodd"/>
-                                  </svg>
-                                </p>
-                                <svg width="136" height="90" xmlns="http://www.w3.org/2000/svg"  style={{marginLeft: "230px", marginTop: "-60px"}}>
-                                  <path d="M1.791 49.777c-.154 4.195-.626 7.827.954 11.852C7.36 73.39 17.485 82.682 29.442 85.955c6.397 1.75 13.576 2.803 20.193 1.89C62.927 86.012 76.9 76.609 87.222 68.784c20.494-15.536 36.094-38.7 35.837-65.222-.256 2.407 2.277 5.37 3.358 7.347 3.17 5.796 5.405 12.093 8.129 18.101.294-2.43-1.167-8.517-1.441-9.82a58.697 58.697 0 0 0-4.824-15.298 6.762 6.762 0 0 1-1.419-2.863c-3.007-.098-5.698.975-8.074 3.217-7.107 4.072-13.72 9.399-19.817 14.854" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/>
-                                </svg>
+                                    <div style={{ fontSize: '40px'}}>Subeen Chloe Jeong</div>
+                                    <svg width="140" height="66" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "50px", marginTop: "-90px", }}>
+                                      <path d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879" stroke="#F3DBC7" stroke-width="3" fill="none" fill-rule="evenodd"/>
+                                    </svg>
+                                  </p>
+                                </div>
+                              </div>
+                            </span>
+                          </h2>
+                          <p className="h2--uppercase animation-line" data-margin="none">
+                            <div className="split">
+                            <div className="line">i am a front-end developer with over a year of experience</div></div>
+                            <div className="split">
+                              <div className="line" style={{display: 'block', textAlign: 'start', width: '100%'}}>
+                                in building and maintaining website, working with React, JavaScript, HTML/CSS to deliver good customer experiences
                               </div>
                             </div>
-                            {/*네이밍 스타일링  */}
-                          </span>
-                        </h2>
-                        <p className="h2--uppercase animation-line" data-margin="none">
-                          <div className="split">
-                          <div className="line">
-                          I use my passion and skills</div>
-                          </div>
-                        </p>
-                        <p className="h2--uppercase animation-line" data-margin="none">
-                          <div className="split">
-                          <div className="line">
-                          to create digital products and</div></div>
-                          <div className="split">
-                            <div className="line" style={{display: 'block', textAlign: 'start', width: '100%'}}>experiences. National and</div>
-                          </div>
-                          <div className="split">
-                          <div className="line">international customers rely on</div></div><div className="split">
-                          <div className="line">me for design, implementation,</div></div><div className="split">
-                          <div className="line">and management of their digital</div></div><div className="split">
-                          <div className="line">products. As an independent, I</div></div><div className="split">
-                          <div className="line">work also with web agencies,</div></div>
-                          <div className="split">
-                            <div className="line">companies, startups and</div>
-                          </div>
-                          <div className="split">
-                            <div className="line">individuals to create a blueprint</div>
-                          </div>
-                          <div className="split">
-                            <div className="line">for the digital business. Advisor</div>
-                          </div>
-                          <div className="split"><div className="line">and partner of some digital and</div>
-                          </div>
-                          <div className="split"><div className="line">fintech startups. Also, Judge at</div>
-                          </div>
-                          <div className="split"><div className="line">CSSDA and The Webby.</div>
-                          </div>
-                        </p>
-                        </div>
-                        <div id="model-wrapper" className="content">
-                          <canvas className="webgl" data-engine="three.js r137" style={{border: '1px solid red'}}></canvas>
-
-                          <div class="caption item-fade2">
-                            
-                              {/* <svg width="136" height="90" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.791 49.777c-.154 4.195-.626 7.827.954 11.852C7.36 73.39 17.485 82.682 29.442 85.955c6.397 1.75 13.576 2.803 20.193 1.89C62.927 86.012 76.9 76.609 87.222 68.784c20.494-15.536 36.094-38.7 35.837-65.222-.256 2.407 2.277 5.37 3.358 7.347 3.17 5.796 5.405 12.093 8.129 18.101.294-2.43-1.167-8.517-1.441-9.82a58.697 58.697 0 0 0-4.824-15.298 6.762 6.762 0 0 1-1.419-2.863c-3.007-.098-5.698.975-8.074 3.217-7.107 4.072-13.72 9.399-19.817 14.854" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd">
-                                  </path>
-                                  </svg> */}
+                            <div className="split">
+                              <div className="line">
+                                Seeking for new opportunities and challenges that will expand my skill set.
+                              </div>
                             </div>
-
-                          
-                          <div className="caption item-fade">
-                            <p className="h2--uppercase" data-margin="none" data-subtitle-left="Michelangelo's David"><span>I am not this one</span>
-                              <svg width="104" height="54" xmlns="http://www.w3.org/2000/svg"  style={{border: '1px solid red'}}>
-                                <path d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879" stroke="#F3DBC7" stroke-width="3" fill="none" fill-rule="evenodd">
-                                </path>
-                              </svg>
-                            </p>
-                            <svg width="136" height="90" xmlns="http://www.w3.org/2000/svg" style={{border: '1px solid red'}}>
-                              <path d="M1.791 49.777c-.154 4.195-.626 7.827.954 11.852C7.36 73.39 17.485 82.682 29.442 85.955c6.397 1.75 13.576 2.803 20.193 1.89C62.927 86.012 76.9 76.609 87.222 68.784c20.494-15.536 36.094-38.7 35.837-65.222-.256 2.407 2.277 5.37 3.358 7.347 3.17 5.796 5.405 12.093 8.129 18.101.294-2.43-1.167-8.517-1.441-9.82a58.697 58.697 0 0 0-4.824-15.298 6.762 6.762 0 0 1-1.419-2.863c-3.007-.098-5.698.975-8.074 3.217-7.107 4.072-13.72 9.399-19.817 14.854" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd">
-                              </path>
-                            </svg>
-                          </div>
+                            <div className="split"><div className="line">Adept at contributing to a highly</div></div>
+                            <div className="split"><div className="line">collaborative work environment,</div></div>
+                            <div className="split"><div className="line">finding solutions,</div></div>
+                            <div className="split"><div className="line">and determining customer satisfaction.</div></div>
+                          </p>
                         </div>
                       </div>
                     </section>
-                      {/* <p classNameName="paragraphAnimation">
-                        <h3>
-                          high motivator
-                          저는 끊임없이 배우고 성장하는 개발자를 꿈꾸고
-                          있습니다. <br />
-                          새로운 기술을 습득하는 것을 좋아하며 <br />
-                          UI/UX 관점을 고려하며 확장 가능한 웹 애플리케이션에
-                          대해 고민합니다.
-                          <br />
-                          업무적, 업무 외적으로 더 나은 사람이 되기 위해
-                          노력하고자 합니다.
-                        </h3>
-                      </p> */}
-                    {/* </div> */}
                   </div>
                 </div>
-                <div className="textWrapper2">
-                  <div className="container1">
-                    <div>
-                      <h2>교육</h2>
-                      <p>
-                        중영학과 대외한어학사 - 상해외국어대학교 [2014.09 -
-                        2018.09]
-                      </p>
-                      <p>2020 위코드 9기 [2020.05 - 2018.07]</p>
-                      <p>CherGround 인턴 협업 [2020.07 - 2018.08]</p>
-                    </div>
-
+                <div className="resumeWrapper">
+                  <div className="container">
+                    <h2>EXPERIENCE</h2>
+                    <p>
+                      Rye&Catchers (Seoul, South Korea) [April 2022 -
+                      Present]
+                    </p>
+                    <p>- In Progress with psychology consultation service project (React, TypeScript, hooks, styled-components, redux-toolkit)</p>
+                    <p>- Seperated Dialog & alert Components</p>
+                    <p>- Gained experience in resolving conflicts with colleagues professionally using gitLab</p>
+                    <div style={{paddingTop: '20px'}}></div>
+                    <p>
+                      Rye&Catchers (Seoul, South Korea) [April 2022 -
+                      Present]
+                    </p>
+                    <p>- In Progress with psychology consultation service project (React, TypeScript, hooks, styled-components, redux-toolkit)</p>
+                    <p>- Seperated Dialog & alert Components</p>
+                    <p>- Gained experience in resolving conflicts with colleagues professionally using gitLab</p>
+                    <div style={{paddingTop: '20px'}}></div>
+                    <p>
+                      Inhandplus (Seoul, South Korea) [November 2022 -
+                      January 2022]
+                    </p>
+                    <p>- Completed admin website project with Merck china, Seoul National University (chart.js, recharts.js, react, styled-component, TypeScript)</p>
+                    <p>- Gained experience in resolving conflicts with colleagues professionally using gitLab</p>
+                    <p>- Improved ability in debugging to improve website performance and user experience</p>
+                  </div>
+                  <div className="container">
+                    <h2>SKILLS</h2>
+                    <p>- Javascript, HTML, CSS/SCSS/SASS</p>
+                    <p>- Typescript, React.js</p>
+                    <p>- Styled-component</p>
+                    <p>- MaterialUI Storybook, bit dev</p>
+                    <p>- Vue.js</p>
+                    <p>- gitHub, gitLab</p>
+                  </div>
+                  <div className="container">
+                    <h2>EDUCATION</h2>
+                    <p>- Chinese and English Languages B.A Shanghai Internationcal Studies University [2014 - 2018]</p>
+                    <p>- Front-end eductation bootcamp 'We Code' (south korea ) [May 2020 - August 2020]</p>
+                  </div>
+                  <div className="container">
+                    <h2>LANGUAGES</h2>
+                    <p>- Korean</p>
+                    <p>- English (intermediate)</p>
+                    <p>- Chinese (intermediate)</p>
                   </div>
                 </div>
               </section>

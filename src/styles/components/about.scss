@@ -1,7 +1,7 @@
 .about-bannerMain{
     margin-top: -20rem;
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
     background-color: black;
     color: #fff;
 
@@ -45,7 +45,7 @@
     }
     .about-bannerMain-lft {
         width: 100vw;
-        height: 70vh;
+        height: 40vh;
         // border: 1px solid red;
         display: table-cell;
         vertical-align: middle;
@@ -57,15 +57,16 @@
         margin-top: 10px;
     }
     .aboutme-intro {
-          display: table-cell;
+        display: table-cell;
         vertical-align: middle;
         height: 20rem;
-          padding: 1.2rem 2rem;
-       
-        // border: 1px solid orangered;
+        padding: 1.2rem 2rem;
     }
-    .textWrapper2{
-          padding: 1.2rem 2rem;
+    .resumeWrapper{
+        .container {
+            width: 20rem;
+            border-top: 1px solid white
+        }
     }
 }
 
