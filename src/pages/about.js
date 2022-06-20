@@ -125,14 +125,6 @@ const About = () => {
                     <p>- Gained experience in resolving conflicts with colleagues professionally using gitLab</p>
                     <div style={{paddingTop: '20px'}}></div>
                     <p>
-                      Rye&Catchers (Seoul, South Korea) [April 2022 -
-                      Present]
-                    </p>
-                    <p>- In Progress with psychology consultation service project (React, TypeScript, hooks, styled-components, redux-toolkit)</p>
-                    <p>- Seperated Dialog & alert Components</p>
-                    <p>- Gained experience in resolving conflicts with colleagues professionally using gitLab</p>
-                    <div style={{paddingTop: '20px'}}></div>
-                    <p>
                       Inhandplus (Seoul, South Korea) [November 2022 -
                       January 2022]
                     </p>
