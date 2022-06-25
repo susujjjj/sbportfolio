@@ -1,7 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { gsap, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import '../styles/components/about.scss'
+//import '../styles/components/about.scss'
+
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -59,27 +60,29 @@ const About = () => {
   return (
     <>
       <div className="page">
-        <div className="aboutcontainer">
+        <div className="">
           <div className="row">
-            <div className="projectpageLayout">
-              <section className="about-bannerMain">
-                <div className="about-bannerMain-lft">
-                  <div className="bannerMain-lft__inner">
+            <div className="projectPageLayout">
+              <section className="about-banner-main">
+
+                <div className="resumeWrapper">
+                  <div className="container">
+
                     <h2>
                       <div className="textWrapper">
                         <span className="text">About page</span>
                       </div>
                     </h2>
 
-                    <section id="intro" style={{paddingLeft: '30px'}}>
+                    <section id="intro">
                       <div class="main-wrapper">
                         <div className="text">
-                          <h2 className="heading--uppercase--inline">
+                          <h2 className="heading-uppercase-inline">
                             <span className="split">
-                              {/* 여기서부터 네이밍 스타일링  */}
+                            
                               <div id="model-wrapper" className="content">
                                 <div class="caption item-fade">
-                                  <p className="h2--uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
+                                  <p className="h2-uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
                                     <span className="line">Hello. I am </span>
                                     <div style={{ fontSize: '40px'}}>Subeen Chloe Jeong</div>
                                     <svg width="140" height="66" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "50px", marginTop: "-90px", }}>
@@ -90,7 +93,7 @@ const About = () => {
                               </div>
                             </span>
                           </h2>
-                          <p className="h2--uppercase animation-line" data-margin="none">
+                          <p className="h2-uppercase animation-line" data-margin="none">
                             <div className="split">
                             <div className="line">i am a front-end developer with over a year of experience</div></div>
                             <div className="split">
@@ -113,6 +116,7 @@ const About = () => {
                     </section>
                   </div>
                 </div>
+
                 <div className="resumeWrapper">
                   <div className="container">
                     <h2>EXPERIENCE</h2>

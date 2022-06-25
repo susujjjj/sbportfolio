@@ -1,73 +1,146 @@
-.about-bannerMain{
-    margin-top: -20rem;
+.about-banner-main{
+    padding-top: 1rem;
     width: 100vw;
     height: 150vh;
+    padding-left: 2rem;
     background-color: black;
     color: #fff;
+
 
     .intro {
         .main-wrapper{
             .text{
-                .heading--uppercase--inline{
+                .heading-uppercase-inline{
                     .line {
                         opacity: 1; 
                         transform: translate(0px, 0%);
                     }
-                    .symbol--right {
+                    .symbol-right {
                         opacity: 1;
                     }
                 }
-                .h2--uppercase animation-line{
+                .h2-uppercase animation-line{
                     .line {
                         display: block; text-align: start; width: 100%;
                     }
                 }
             }
-
-        }
-
-    }
-    .caption item-fade2 {
-        opacity: 1; 
-        transform: translate(0px, 0%)
-    }
-
-    #model-wrapper {
-      .webgl{
-        // width="858" height="898"
-        width: 429px; 
-        height: 449px
-     }
-     .caption item-fade {
-        opacity: 1; 
-        transform: translate(0px, 0%);
-     }
-    }
-    .about-bannerMain-lft {
-        width: 100vw;
-        height: 40vh;
-        // border: 1px solid red;
-        display: table-cell;
-        vertical-align: middle;
-        .textWrapper{
-            padding: 1.2rem 2rem;
         }
     }
-    .paragraphAnimation {
-        margin-top: 10px;
-    }
-    .aboutme-intro {
-        display: table-cell;
-        vertical-align: middle;
-        height: 20rem;
-        padding: 1.2rem 2rem;
-    }
-    .resumeWrapper{
-        .container {
-            width: 20rem;
-            border-top: 1px solid white
-        }
-    }
+    // .caption item-fade2 {
+    //     opacity: 1; 
+    //     transform: translate(0px, 0%)
+    // }
+
+    // #model-wrapper {
+    //   .webgl{
+    //     // width="858" height="898"
+    //     width: 429px; 
+    //     height: 449px
+    //  }
+    //  .caption item-fade {
+    //     opacity: 1; 
+    //     transform: translate(0px, 0%);
+    //  }
+    // }
+    // .about-bannerMain-lft {
+    //     width: 100vw;
+    //     height: 40vh;
+    //     // border: 1px solid red;
+    //     display: table-cell;
+    //     vertical-align: middle;
+    //     .textWrapper{
+    //         padding: 1.2rem 2rem;
+    //     }
+    // }
+    // .paragraphAnimation {
+    //     margin-top: 10px;
+    // }
+    // .aboutme-intro {
+    //     display: table-cell;
+    //     vertical-align: middle;
+    //     height: 20rem;
+    //     padding: 1.2rem 2rem;
+    // }
+    // .resumeWrapper{
+    //     .container {
+    //         width: 20rem;
+    //         border-top: 1px solid white
+    //     }
+    // }
 }
+
+
+// .about-bannerMain{
+//     margin-top: -20rem;
+//     width: 100vw;
+//     height: 150vh;
+//     background-color: black;
+//     color: #fff;
+
+//     .intro {
+//         .main-wrapper{
+//             .text{
+//                 .heading--uppercase--inline{
+//                     .line {
+//                         opacity: 1; 
+//                         transform: translate(0px, 0%);
+//                     }
+//                     .symbol--right {
+//                         opacity: 1;
+//                     }
+//                 }
+//                 .h2--uppercase animation-line{
+//                     .line {
+//                         display: block; text-align: start; width: 100%;
+//                     }
+//                 }
+//             }
+
+//         }
+
+//     }
+//     .caption item-fade2 {
+//         opacity: 1; 
+//         transform: translate(0px, 0%)
+//     }
+
+//     #model-wrapper {
+//       .webgl{
+//         // width="858" height="898"
+//         width: 429px; 
+//         height: 449px
+//      }
+//      .caption item-fade {
+//         opacity: 1; 
+//         transform: translate(0px, 0%);
+//      }
+//     }
+//     .about-bannerMain-lft {
+//         width: 100vw;
+//         height: 40vh;
+//         // border: 1px solid red;
+//         display: table-cell;
+//         vertical-align: middle;
+//         .textWrapper{
+//             padding: 1.2rem 2rem;
+//         }
+//     }
+//     .paragraphAnimation {
+//         margin-top: 10px;
+//     }
+//     .aboutme-intro {
+//         display: table-cell;
+//         vertical-align: middle;
+//         height: 20rem;
+//         padding: 1.2rem 2rem;
+//     }
+//     .resumeWrapper{
+//         .container {
+//             width: 20rem;
+//             border-top: 1px solid white
+//         }
+//     }
+// }
 
 
