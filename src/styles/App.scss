@@ -25,6 +25,7 @@ html {
   min-width: 1560px;
   margin: 0 auto;
   height: 100%;
+
   @include media("<=1560px") {
     width: 1280px;
     min-width: 1280px;
@@ -147,7 +148,6 @@ html {
   height: 100vh;
   width: 100%;
   background: $white;
-  // border: 1px solid red;
   .row {
     display: flex;
     align-items: center;
@@ -156,27 +156,19 @@ html {
       width: 100vw;
       height: 100vh;   
         
-
-      .about-banner-main{
+      /*aboutpage*/
+      .aboutBannerMain{
         padding: 1rem 0;
         width: 100vw;
-        // height: 180vh;
+        // height: 150vh;
         background-color: black;
         color: #fff;
         padding-left: .5rem;
 
-        .about-banner-main{
-          // padding-top: 1rem;
-          width: 100vw;
-          height: 150vh;
-          // padding-left: 2rem;
-          background-color: black;
-          color: #fff;
-      
           .intro {
               .main-wrapper{
                   .text{
-                      .heading-uppercase-inline{
+                      .headingUppercaseInline{
                           .line {
                               opacity: 1; 
                               transform: translate(0px, 0%);
@@ -185,7 +177,50 @@ html {
                               opacity: 1;
                           }
                       }
-                      .h2-uppercase animation-line{
+                      .h2Uppercase animation-line{
+                          .line {
+                              display: block; text-align: start; width: 100%;
+                          }
+                      }
+                  }
+              }
+          }
+
+          .resumeWrapper{
+          
+              .container {
+                  width: 20rem;
+                  border-bottom: 1px solid white
+              }
+              .container:last-child {
+                border-bottom: none;
+              }
+          }
+    
+      }
+
+      /*projectpage*/
+      .projectBannerMain{
+        padding: 1rem 0;
+        width: 100vw;
+        // height: 150vh;
+        background-color: black;
+        color: #fff;
+        padding-left: .5rem;
+
+          .intro {
+              .main-wrapper{
+                  .text{
+                      .headingUppercaseInline{
+                          .line {
+                              opacity: 1; 
+                              transform: translate(0px, 0%);
+                          }
+                          .symbol-right {
+                              opacity: 1;
+                          }
+                      }
+                      .h2Uppercase animation-line{
                           .line {
                               display: block; text-align: start; width: 100%;
                           }
@@ -200,11 +235,9 @@ html {
                   border-top: 1px solid white
               }
           }
-      }
-      
     
-       
       }
+
 
     }
   }

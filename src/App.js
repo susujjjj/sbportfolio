@@ -6,7 +6,7 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 
 //pages
-import CaseStudies from "./pages/caseStudies";
+import Projects from "./pages/projects";
 import Approach from "./pages/approach";
 import Services from "./pages/services";
 import About from "./pages/about";
@@ -15,7 +15,7 @@ import Home from "./pages/home";
 //routes
 const routes = [
   { path: "/sbportfolio", name: "Home", Component: Home },
-  { path: "/projects", name: "caseStudies", Component: CaseStudies },
+  { path: "/projects", name: "Projects", Component: Projects },
   { path: "/approach", name: "approach", Component: Approach },
   { path: "/services", name: "services", Component: Services },
   { path: "/about", name: "about", Component: About },
