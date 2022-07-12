@@ -238,7 +238,42 @@ html {
     
       }
 
+      .contactBannerMain{
+        padding: 1rem 0;
+        width: 100vw;
+        // height: 150vh;
+        background-color: black;
+        color: #fff;
+        padding-left: .5rem;
 
+        .container {
+          width: 20rem;
+        }
+
+          .intro {
+              .main-wrapper{
+                  .text{
+                      .headingUppercaseInline{
+                          .line {
+                              opacity: 1; 
+                              transform: translate(0px, 0%);
+                          }
+                          .symbol-right {
+                              opacity: 1;
+                          }
+                      }
+                      .h2Uppercase animation-line{
+                          .line {
+                              display: block; text-align: start; width: 100%;
+                          }
+                      }
+                  }
+              }
+          }
+
+      
+    
+      }
     }
   }
 }

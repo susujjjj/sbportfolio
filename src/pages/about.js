@@ -50,7 +50,6 @@ const About = () => {
          start: "top 90%",
          end: "bottom 60%",
          toggleActions: "restart complete reverse reset",
-         //options: play, pause, resume, reset, restart, complete, reverse,none
        },
      });
    });
@@ -111,7 +110,6 @@ const About = () => {
                   </section>
                 </div>
               </div>
-
               <div className="resumeWrapper">
                 <div className="container">
                   <h2>EXPERIENCE</h2>

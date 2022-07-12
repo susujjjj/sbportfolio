@@ -83,7 +83,7 @@ const CaseStudies = () => {
         <div className="row">
           <div className="projectPageLayout">
             <section className="projectBannerMain">
-            <div className="resumeWrapper">
+              <div className="resumeWrapper">
                 <h2>
                   <div className="textWrapper">
                     <span className="text">Project page</span>
