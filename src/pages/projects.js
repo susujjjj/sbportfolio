@@ -52,7 +52,6 @@ const CaseStudies = () => {
                     <a
                       className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
                       href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
-                      target="_blank"
                     >
                       <button className="css-1kopvh6">VIEW VIDEO</button>
                     </a>
@@ -62,7 +61,6 @@ const CaseStudies = () => {
                     <a
                       className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
                       href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
-                      target="_blank"
                     >
                       <button className="css-1kopvh6">Project Review</button>
                     </a>
@@ -88,7 +86,6 @@ const CaseStudies = () => {
                     <a
                       className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
                       href="https://www.youtube.com/watch?v=28Q003gHF4Q"
-                      target="_blank"
                     >
                       <button className="css-1kopvh6">VIEW VIDEO</button>
                     </a>
@@ -98,7 +95,6 @@ const CaseStudies = () => {
                     <a
                       className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
                       href="https://www.youtube.com/watch?v=28Q003gHF4Q"
-                      target="_blank"
                     >
                       <button className="css-1kopvh6">Project Review</button>
                     </a>

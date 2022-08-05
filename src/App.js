@@ -4,11 +4,9 @@ import { gsap } from 'gsap';
 import './styles/App.scss';
 import Header from './components/header';
 import Navigation from './components/navigation';
-
 import Projects from './pages/projects';
 import CaseStudies from './pages/caseStudies';
 import Approach from './pages/approach';
-import Services from './pages/services';
 import About from './pages/about';
 import Home from './pages/home';
 

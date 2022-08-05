@@ -117,7 +117,6 @@ const Approach = () => {
                             <span>
                               <a
                                 href="https://github.com/susujjjj"
-                                target="_blank"
                                 className="email-style"
                               >
                                 github.com/susujjjj
