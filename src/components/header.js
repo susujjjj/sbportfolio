@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { withRouter } from "react-router-dom";
-import { ReactComponent as UpArrow } from "../assets/up-arrow-circle.svg";
-import { openMenu, closeMenu } from "../animations/menuAnimations";
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import { ReactComponent as UpArrow } from '../assets/up-arrow-circle.svg';
+import { openMenu, closeMenu } from '../animations/menuAnimations';
 
+// Define reducer
 const Header = ({ history, dimensions }) => {
   const [menuState, setMenuState] = useState({ menuOpened: false });
-  
   useEffect(() => {
     //Listening for page changes.
     history.listen(() => {
@@ -21,10 +21,10 @@ const Header = ({ history, dimensions }) => {
 
   return (
     <div className="header">
-      <div className="container">
+      <div className="headerContainer">
         <div className="row v-center space-between">
           <div className="logo">
-            <NavLink to="/sbportfolio" exact>
+            <NavLink to="/" exact>
               Chloe's Portfolio
             </NavLink>
           </div>

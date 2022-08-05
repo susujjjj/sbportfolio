@@ -1,24 +1,23 @@
-import React, { useEffect, useRef } from "react";
-import { Route } from "react-router-dom";
-import { gsap } from "gsap";
-import "./styles/App.scss";
-import Header from "./components/header";
-import Navigation from "./components/navigation";
+import React, { useEffect } from 'react';
+import { Route } from 'react-router-dom';
+import { gsap } from 'gsap';
+import './styles/App.scss';
+import Header from './components/header';
+import Navigation from './components/navigation';
 
-//pages
-import Projects from "./pages/projects";
-import Approach from "./pages/approach";
-import Services from "./pages/services";
-import About from "./pages/about";
-import Home from "./pages/home";
+import Projects from './pages/projects';
+import CaseStudies from './pages/caseStudies';
+import Approach from './pages/approach';
+import Services from './pages/services';
+import About from './pages/about';
+import Home from './pages/home';
 
-//routes
 const routes = [
-  { path: "/sbportfolio", name: "Home", Component: Home },
-  { path: "/projects", name: "Projects", Component: Projects },
-  { path: "/approach", name: "approach", Component: Approach },
-  { path: "/services", name: "services", Component: Services },
-  { path: "/about", name: "about", Component: About },
+  { path: '/', name: 'Home', Component: Home },
+  { path: '/case-studies', name: 'caseStudies', Component: CaseStudies },
+  { path: '/approach', name: 'approach', Component: Approach },
+  { path: '/projects', name: 'Projects', Component: Projects },
+  { path: '/about', name: 'about', Component: About },
 ];
 
 function debounce(fn, ms) {
@@ -39,28 +38,20 @@ function App() {
   });
 
   useEffect(() => {
-    gsap.to("body", 0, { css: { visibility: "visible" } }); //preventing flash from happening.
-    //grab inner height of window for mobile reasons when dealing with vh
-    // let vh = dimensions.height * 0.01;
-    // let vh = window.innerHeight * 0.01;
-
-    //set css varible vh
-    // document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-  const debouncedHandleResize = debounce(function handleResize() {
+    // prevents flashing
+    gsap.to('body', 0, { css: { visibility: 'visible' } });
+    const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
         height: window.innerHeight,
-        width: window.innerWidth
+        width: window.innerWidth,
       });
     }, 1000);
 
-    window.addEventListener("resize", debouncedHandleResize);
-
+    window.addEventListener('resize', debouncedHandleResize);
     return () => {
-      window.removeEventListener("resize", debouncedHandleResize);
+      window.removeEventListener('resize', debouncedHandleResize);
     };
-  },[]);
-
+  });
   return (
     <>
       <Header dimensions={dimensions} />

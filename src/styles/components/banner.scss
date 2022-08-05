@@ -2,6 +2,10 @@
   height: 50vh; //fallback option
   height: calc(var(--vh, 1vh) * 50);
   background-color: $white;
+  .banner-wrapper {
+    padding-left: 1rem;
+  }
+
   .row {
     flex-direction: column;
     justify-content: center;
@@ -12,11 +16,11 @@
       z-index: 10;
       color: $white;
       mix-blend-mode: difference;
-      @include media("<=tablet") {
+      @include media('<=tablet') {
         font-size: 2.4rem;
         line-height: 3rem;
       }
-      @include media("<=phone") {
+      @include media('<=phone') {
         margin-top: 72px;
         font-size: 1.7rem;
         line-height: 2.2rem;
@@ -26,10 +30,10 @@
         height: 56px;
         position: relative;
         overflow: hidden;
-        @include media("<=tablet") {
+        @include media('<=tablet') {
           height: 48px;
         }
-        @include media("<=phone") {
+        @include media('<=phone') {
           height: 32px;
         }
         span {
@@ -48,10 +52,10 @@
         display: flex;
         align-items: center;
         font-weight: 600;
-        @include media("<=tablet") {
+        @include media('<=tablet') {
           font-size: 1.3rem;
         }
-        @include media("<=phone") {
+        @include media('<=phone') {
           font-size: 1.1rem;
         }
         svg {
@@ -62,12 +66,12 @@
           width: 24px;
           border-radius: 100px;
           transition: 0.4s ease-in-out;
-          @include media("<=tablet") {
+          @include media('<=tablet') {
             padding: 6px;
             width: 20px;
             height: 20px;
           }
-          @include media("<=phone") {
+          @include media('<=phone') {
             padding: 4px;
             width: 16px;
             height: 16px;

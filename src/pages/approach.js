@@ -1,85 +1,27 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { gsap, TimelineLite, Power3 } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import "../styles/components/approach.scss";
+import React from 'react';
 
 const Approach = () => {
-  let t1 = new TimelineLite({ delay: 0.3 });
-  useEffect(() => {
-    t1.from(
-      '.bannerMain-rgt',
-      3,
-      { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-      'Start',
-    );
-    t1.staggerFrom(
-      '.text',
-      1,
-      { y: 30, ease: Power3.easeOut, opacity: 0 },
-      0.15,
-      'Start',
-    )
-      .from(
-        '.btn-primary',
-        1,
-        { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.4 },
-        0.35,
-      )
-      .from(
-        '.paragraphAnimation',
-        1,
-        { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-        0.35,
-      )
-      .from(
-        'nav',
-        1,
-        { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-        0.35,
-        'Start',
-      );
-    gsap.from('.content', {
-      duration: 3,
-      y: '100',
-      opacity: 0,
-      ease: 'ease-in',
-      scrollTrigger: {
-        trigger: '.content-main',
-        markers: false,
-        start: 'top 90%',
-        end: 'bottom 60%',
-        toggleActions: 'restart complete reverse reset',
-        //options: play, pause, resume, reset, restart, complete, reverse,none
-      },
-    });
-  });
-
   return (
-    <>
-      <div className="page">
+    <div className="page">
+      <div className="container">
         <div className="row">
-          <div className="projectPageLayout">
+          <div className="PageLayout">
             <section className="contactBannerMain">
               <div className="container">
-                <h2>
-                  <div className="textWrapper">
-                    <span className="text">About page</span>
-                  </div>
-                </h2>
-                <section id="intro">
-                  <div className="intro">
+                <section id="">
+                  <div className="contactIntro">
                     <h2 className="textWrapper">
                       <span className="text">CONTACT</span>
                     </h2>
-                    <div className="aboutme-intro">
-                      <p className="paragraphAnimation">
+                    <div className="contactInfo">
+                      <span className="paragraphAnimation">
                         <h3>
                           <div className="infoWrapper">
                             <svg
                               viewBox="0 0 21 20"
                               width="21"
                               height="20"
-                              enable-background="new 0 0 24 24"
+                              enableBackground="new 0 0 24 24"
                               className="at-svg"
                             >
                               <path
@@ -97,18 +39,12 @@ const Approach = () => {
                             </span>
                           </div>
                           <div className="infoWrapper">
-                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                            <div className="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
                               <svg
-                                // viewBox="0 0 19 18"
-                                // width="19"
-                                // height="18"
-                                // enable-background="new 0 0 24 24"
-                                // className="sc-gKsewC guoOTK"
-
                                 viewBox="0 0 21 20"
                                 width="21"
                                 height="20"
-                                enable-background="new 0 0 24 24"
+                                enableBackground="new 0 0 24 24"
                                 className="at-svg"
                               >
                                 <path
@@ -120,47 +56,41 @@ const Approach = () => {
                             <span className="phone">+82 10 5637 6381</span>
                           </div>
 
-                          {/*======== */}
                           <div className="infoWrapper">
                             <svg
                               version="1.1"
                               id="Layer_1"
                               xmlns="http://www.w3.org/2000/svg"
-                              // x="10px"
-                              // y="10px"
-                              // viewBox="0 0 21 20"
                               width="21"
                               height="21"
-                              enable-background="new 0 0 24 24"
+                              enableBackground="new 0 0 24 24"
                               className="at-svg"
                               viewBox="0 0 512 512"
                               fill="currentColor"
-                              // style="enable-background:new 0 0 512 512;"
                             >
-                              <style type="text/css">
-                                {/* .st0{fill-rule:evenodd;clip-rule:evenodd;} */}
-                              </style>
+                              <style type="text/css"></style>
                               <g>
                                 <path
-                                  class="st0"
+                                  className="st0"
                                   d="M427.5,0h-343C38.1,0,0,38.1,0,84.5v343C0,474,38.1,512,84.5,512h343c46.4,0,84.5-38,84.5-84.5v-343
 		C512,38.1,474,0,427.5,0z M411.2,312.8c-0.3,54.4-44.5,98.9-99,98.9H198.3c-54.5,0-99-44.5-99-98.9V197.2c0-54.5,44.5-99.1,99-99.1
 		h69.3c25.6,3,62.8,24.9,76.5,54.1c3.8,8.2,5.8,9.4,8.9,33.6c1.7,12.5,2.5,21.7,8.1,26.8c7.9,7.1,37,2.3,42.8,6.8l4.4,3.5l2.6,5.5
 		l0.9,4.4L411.2,312.8z"
                                 />
                                 <path
-                                  class="st0"
+                                  className="st0"
                                   d="M199.6,216.9h54.9c10.5,0,19-8.6,19-19s-8.5-18.9-19-18.9h-54.9c-10.5,0-19,8.5-19,18.9
 		S189.1,216.9,199.6,216.9z"
                                 />
                                 <path
-                                  class="st0"
+                                  className="st0"
                                   d="M311.2,292.4H199.6c-10.5,0-19,8.5-19,18.9c0,10.3,8.5,18.9,19,18.9h111.6c10.4,0,18.9-8.6,18.9-18.9
 		C330.1,300.9,321.6,292.4,311.2,292.4z"
                                 />
                               </g>
                             </svg>
                             <span>
+                              =
                               <a
                                 href="https://github.com/susujjjj"
                                 className="email-style"
@@ -169,16 +99,15 @@ const Approach = () => {
                               </a>
                             </span>
                           </div>
-                          {/**======= */}
 
                           <div className="infoWrapper">
-                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                            <div className="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 64 64"
                                 width="28"
                                 height="28"
-                                enable-background="new 0 0 24 24"
+                                enableBackground="new 0 0 24 24"
                                 className="at-svg-git"
                                 fill="currentColor"
                               >
@@ -196,15 +125,14 @@ const Approach = () => {
                             </span>
                           </div>
 
-                          {/**======= */}
                           <div className="linkedinWrapper">
-                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                            <div className="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
                                 width="27"
                                 height="27"
-                                enable-background="new 0 0 24 24"
+                                enableBackground="new 0 0 24 24"
                                 className="at-svg-git"
                                 fill="currentColor"
                               >
@@ -214,7 +142,6 @@ const Approach = () => {
                             <span>
                               <a
                                 href="https://www.linkedin.com/in/subeen-jeong-28a477150/"
-                                target="_blank"
                                 className="email-style"
                               >
                                 linkedin.com/in/subeen-jeong-28a477150/
@@ -222,7 +149,7 @@ const Approach = () => {
                             </span>
                           </div>
                         </h3>
-                      </p>
+                      </span>
                     </div>
                   </div>
                 </section>
@@ -231,7 +158,7 @@ const Approach = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
