@@ -1,59 +1,58 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { gsap, TimelineLite, Power3 } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { gsap, TimelineLite, Power3 } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import "../styles/components/approach.scss";
 
 const Approach = () => {
-    let t1 = new TimelineLite({ delay: 0.3 });
-    useEffect(() => {
-      t1.from(
-        ".bannerMain-rgt",
-        3,
-        { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-        "Start"
-      );
-      t1.staggerFrom(
-        ".text",
+  let t1 = new TimelineLite({ delay: 0.3 });
+  useEffect(() => {
+    t1.from(
+      '.bannerMain-rgt',
+      3,
+      { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+      'Start',
+    );
+    t1.staggerFrom(
+      '.text',
+      1,
+      { y: 30, ease: Power3.easeOut, opacity: 0 },
+      0.15,
+      'Start',
+    )
+      .from(
+        '.btn-primary',
         1,
-        { y: 30, ease: Power3.easeOut, opacity: 0 },
-        0.15,
-        "Start"
+        { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.4 },
+        0.35,
       )
-        .from(
-          ".btn-primary",
-          1,
-          { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.4 },
-          0.35
-        )
-        .from(
-          ".paragraphAnimation",
-          1,
-          { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-          0.35
-        )
-        .from(
-          "nav",
-          1,
-          { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-          0.35,
-          "Start"
-        );
-      gsap.from(".content", {
-        duration: 3,
-        y: "100",
-        opacity: 0,
-        ease: "ease-in",
-        scrollTrigger: {
-          trigger: ".content-main",
-          markers: false,
-          start: "top 90%",
-          end: "bottom 60%",
-          toggleActions: "restart complete reverse reset",
-          //options: play, pause, resume, reset, restart, complete, reverse,none
-        },
-      });
+      .from(
+        '.paragraphAnimation',
+        1,
+        { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+        0.35,
+      )
+      .from(
+        'nav',
+        1,
+        { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+        0.35,
+        'Start',
+      );
+    gsap.from('.content', {
+      duration: 3,
+      y: '100',
+      opacity: 0,
+      ease: 'ease-in',
+      scrollTrigger: {
+        trigger: '.content-main',
+        markers: false,
+        start: 'top 90%',
+        end: 'bottom 60%',
+        toggleActions: 'restart complete reverse reset',
+        //options: play, pause, resume, reset, restart, complete, reverse,none
+      },
     });
-  
+  });
 
   return (
     <>
@@ -68,99 +67,166 @@ const Approach = () => {
                   </div>
                 </h2>
                 <section id="intro">
-                <div className="intro">                  
-                <h2 className="textWrapper">
-                  <span className="text">Contact Me</span>
-                </h2>
-                <div className="aboutme-intro">
-                  <p className="paragraphAnimation">
-                    <h3>
-                      <div className="infoWrapper">
-                        <p>
-                          <a href="mailto:�chlojeong@gmail.com">
-                            EMAIL chlojeong@gmail.com
-                          </a>
-                        </p>
-                      </div>
-                      <div className="infoWrapper">
-                        <p>PHONE +82 10 5637 6381</p>
-                      </div>
-                      <div className="infoWrapper">
-                        <p>
-                          <a href="https://github.com/susujjjj" target="_blank">
-                            <div className="btnWrapper">
-                              <div id="signinbox">BLOG velog.io/@rhftnqls</div>
-                            </div>
-                          </a>
-                        </p>
-                      </div>
-                      <div className="infoWrapper">
-                        <p>
-                          <a href="https://github.com/susujjjj" target="_blank">
-                            <div className="btnWrapper">
-                              <div id="signinbox">GITHUB github.com/susujjjj</div>
-                            </div>
-                          </a>
-                        </p>
-                      </div>
-                      <div className="infoWrapper">
-                        <p>
-                          <a
-                            href="https://www.linkedin.com/in/subeen-jeong-28a477150/"
-                            target="_blank"
-                          >
-                            <div className="btnWrapper">
-                              <div id="signinbox">
-                                LinkedIn linkedin.com/in/subeen-jeong-28a477150/
-                              </div>
-                            </div>
-                          </a>
-                        </p>
-                      </div>
-                    </h3>
-                  </p>
-                </div>
-              </div>
-                  {/* <div>
-                    <div className="text">
-                      <h2 className="headingUppercaseInline">
-                        <span className="split">
-                        
-                          <div id="model-wrapper" className="content">
-                            <div class="caption item-fade">
-                              <p className="h2Uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
-                                <span className="line">Hello. I am </span>
-                                <div style={{ fontSize: '40px'}}>Subeen Chloe Jeong</div>
-                                <svg width="140" height="66" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "50px", marginTop: "-90px", }}>
-                                  <path d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879" stroke="#F3DBC7" stroke-width="3" fill="none" fill-rule="evenodd"/>
-                                </svg>
-                              </p>
-                            </div>
+                  <div className="intro">
+                    <h2 className="textWrapper">
+                      <span className="text">CONTACT</span>
+                    </h2>
+                    <div className="aboutme-intro">
+                      <p className="paragraphAnimation">
+                        <h3>
+                          <div className="infoWrapper">
+                            <svg
+                              viewBox="0 0 21 20"
+                              width="21"
+                              height="20"
+                              enable-background="new 0 0 24 24"
+                              className="at-svg"
+                            >
+                              <path
+                                d="M10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 15.52 4.98 20 10.5 20H15.5V18H10.5C6.16 18 2.5 14.34 2.5 10C2.5 5.66 6.16 2 10.5 2C14.84 2 18.5 5.66 18.5 10V11.43C18.5 12.22 17.79 13 17 13C16.21 13 15.5 12.22 15.5 11.43V10C15.5 7.24 13.26 5 10.5 5C7.74 5 5.5 7.24 5.5 10C5.5 12.76 7.74 15 10.5 15C11.88 15 13.14 14.44 14.04 13.53C14.69 14.42 15.81 15 17 15C18.97 15 20.5 13.4 20.5 11.43V10C20.5 4.48 16.02 0 10.5 0ZM10.5 13C8.84 13 7.5 11.66 7.5 10C7.5 8.34 8.84 7 10.5 7C12.16 7 13.5 8.34 13.5 10C13.5 11.66 12.16 13 10.5 13Z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                            <span>
+                              <a
+                                href="mailto:�chlojeong@gmail.com"
+                                className="email-style"
+                              >
+                                chlojeong@gmail.com
+                              </a>
+                            </span>
                           </div>
-                        </span>
-                      </h2>
-                      <p className="h2Uppercase" data-margin="none">
-                        <div className="split">
-                        <div className="line">i am a front-end developer with over a year of experience</div></div>
-                        <div className="split">
-                          <div className="line" style={{display: 'block', textAlign: 'start', width: '100%'}}>
-                            in building and maintaining website, working with React, JavaScript, HTML/CSS to deliver good customer experiences
+                          <div className="infoWrapper">
+                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                              <svg
+                                // viewBox="0 0 19 18"
+                                // width="19"
+                                // height="18"
+                                // enable-background="new 0 0 24 24"
+                                // className="sc-gKsewC guoOTK"
+
+                                viewBox="0 0 21 20"
+                                width="21"
+                                height="20"
+                                enable-background="new 0 0 24 24"
+                                className="at-svg"
+                              >
+                                <path
+                                  d="M4.12 7.79C5.56 10.62 7.88 12.93 10.71 14.38L12.91 12.18C13.18 11.91 13.58 11.82 13.93 11.94C15.05 12.31 16.26 12.51 17.5 12.51C18.05 12.51 18.5 12.96 18.5 13.51V17C18.5 17.55 18.05 18 17.5 18C8.11 18 0.5 10.39 0.5 1C0.5 0.45 0.95 0 1.5 0H5C5.55 0 6 0.45 6 1C6 2.25 6.2 3.45 6.57 4.57C6.68 4.92 6.6 5.31 6.32 5.59L4.12 7.79Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </div>
+                            <span className="phone">+82 10 5637 6381</span>
                           </div>
-                        </div>
-                        <div className="split">
-                          <div className="line">
-                            Seeking for new opportunities and challenges that will expand my skill set.
+
+                          {/*======== */}
+                          <div className="infoWrapper">
+                            <svg
+                              version="1.1"
+                              id="Layer_1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              // x="10px"
+                              // y="10px"
+                              // viewBox="0 0 21 20"
+                              width="21"
+                              height="21"
+                              enable-background="new 0 0 24 24"
+                              className="at-svg"
+                              viewBox="0 0 512 512"
+                              fill="currentColor"
+                              // style="enable-background:new 0 0 512 512;"
+                            >
+                              <style type="text/css">
+                                {/* .st0{fill-rule:evenodd;clip-rule:evenodd;} */}
+                              </style>
+                              <g>
+                                <path
+                                  class="st0"
+                                  d="M427.5,0h-343C38.1,0,0,38.1,0,84.5v343C0,474,38.1,512,84.5,512h343c46.4,0,84.5-38,84.5-84.5v-343
+		C512,38.1,474,0,427.5,0z M411.2,312.8c-0.3,54.4-44.5,98.9-99,98.9H198.3c-54.5,0-99-44.5-99-98.9V197.2c0-54.5,44.5-99.1,99-99.1
+		h69.3c25.6,3,62.8,24.9,76.5,54.1c3.8,8.2,5.8,9.4,8.9,33.6c1.7,12.5,2.5,21.7,8.1,26.8c7.9,7.1,37,2.3,42.8,6.8l4.4,3.5l2.6,5.5
+		l0.9,4.4L411.2,312.8z"
+                                />
+                                <path
+                                  class="st0"
+                                  d="M199.6,216.9h54.9c10.5,0,19-8.6,19-19s-8.5-18.9-19-18.9h-54.9c-10.5,0-19,8.5-19,18.9
+		S189.1,216.9,199.6,216.9z"
+                                />
+                                <path
+                                  class="st0"
+                                  d="M311.2,292.4H199.6c-10.5,0-19,8.5-19,18.9c0,10.3,8.5,18.9,19,18.9h111.6c10.4,0,18.9-8.6,18.9-18.9
+		C330.1,300.9,321.6,292.4,311.2,292.4z"
+                                />
+                              </g>
+                            </svg>
+                            <span>
+                              <a
+                                href="https://github.com/susujjjj"
+                                className="email-style"
+                              >
+                                velog.io/@rhftnqls
+                              </a>
+                            </span>
                           </div>
-                        </div>
-                        <div className="split"><div className="line">Adept at contributing to a highly</div></div>
-                        <div className="split"><div className="line">collaborative work environment,</div></div>
-                        <div className="split"><div className="line">finding solutions,</div></div>
-                        <div className="split"><div className="line">and determining customer satisfaction.</div></div>
+                          {/**======= */}
+
+                          <div className="infoWrapper">
+                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 64 64"
+                                width="28"
+                                height="28"
+                                enable-background="new 0 0 24 24"
+                                className="at-svg-git"
+                                fill="currentColor"
+                              >
+                                <path d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z" />
+                              </svg>
+                            </div>
+                            <span>
+                              <a
+                                href="https://github.com/susujjjj"
+                                target="_blank"
+                                className="email-style"
+                              >
+                                github.com/susujjjj
+                              </a>
+                            </span>
+                          </div>
+
+                          {/**======= */}
+                          <div className="linkedinWrapper">
+                            <div class="sc-bdfBwQ sc-gsTCUz kEgUiU bhdLno">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                width="27"
+                                height="27"
+                                enable-background="new 0 0 24 24"
+                                className="at-svg-git"
+                                fill="currentColor"
+                              >
+                                <path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z" />
+                              </svg>
+                            </div>
+                            <span>
+                              <a
+                                href="https://www.linkedin.com/in/subeen-jeong-28a477150/"
+                                target="_blank"
+                                className="email-style"
+                              >
+                                linkedin.com/in/subeen-jeong-28a477150/
+                              </a>
+                            </span>
+                          </div>
+                        </h3>
                       </p>
                     </div>
-                  </div> */}
+                  </div>
                 </section>
-              </div>    
+              </div>
             </section>
           </div>
         </div>

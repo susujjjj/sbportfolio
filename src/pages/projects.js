@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import '../styles/components/project.scss'
-import { gsap, TimelineLite, Power3} from 'gsap';
+import React, { useEffect } from 'react';
+import '../styles/components/project.scss';
+import { gsap, TimelineLite, Power3 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Channel from '../assets/channel.png'
-import Airbnb from "../assets/airbnb.gif";
+import Channel from '../assets/channel.png';
+import Airbnb from '../assets/airbnb.gif';
 gsap.registerPlugin(ScrollTrigger);
 
 const panels = [
@@ -24,58 +24,56 @@ const panels = [
   },
 ];
 
-
 const CaseStudies = () => {
   let t1 = new TimelineLite({ delay: 0.3 });
   useEffect(() => {
     t1.from(
-      ".bannerMain-rgt",
+      '.bannerMain-rgt',
       3,
       { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-      "Start"
+      'Start',
     );
     t1.staggerFrom(
-      ".text",
+      '.text',
       1,
       { y: 30, ease: Power3.easeOut, opacity: 0 },
       0.15,
-      "Start"
+      'Start',
     )
       .from(
-        ".btn-primary",
+        '.btn-primary',
         1,
         { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.4 },
-        0.35
+        0.35,
       )
       .from(
-        ".paragraphAnimation",
+        '.paragraphAnimation',
         1,
         { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
-        0.35
+        0.35,
       )
       .from(
-        "nav",
+        'nav',
         1,
         { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
         0.35,
-        "Start"
+        'Start',
       );
-    gsap.from(".content", {
+    gsap.from('.content', {
       duration: 3,
-      y: "100",
+      y: '100',
       opacity: 0,
-      ease: "ease-in",
+      ease: 'ease-in',
       scrollTrigger: {
-        trigger: ".content-main",
+        trigger: '.content-main',
         markers: false,
-        start: "top 90%",
-        end: "bottom 60%",
-        toggleActions: "restart complete reverse reset",
+        start: 'top 90%',
+        end: 'bottom 60%',
+        toggleActions: 'restart complete reverse reset',
         //options: play, pause, resume, reset, restart, complete, reverse,none
       },
     });
   });
-  
 
   return (
     <>
@@ -94,14 +92,33 @@ const CaseStudies = () => {
                     <div className="text">
                       <h2 className="headingUppercaseInline">
                         <span className="split">
-                        
                           <div id="model-wrapper" className="content">
                             <div class="caption item-fade">
-                              <p className="h2Uppercase" data-margin="none" data-subtitle-left="Michelangelo's David">
+                              <p
+                                className="h2Uppercase"
+                                data-margin="none"
+                                data-subtitle-left="Michelangelo's David"
+                              >
                                 <span className="line">Hello. I am </span>
-                                <div style={{ fontSize: '40px'}}>Subeen Chloe Jeong</div>
-                                <svg width="140" height="66" xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "50px", marginTop: "-90px", }}>
-                                  <path d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879" stroke="#F3DBC7" stroke-width="3" fill="none" fill-rule="evenodd"/>
+                                <div style={{ fontSize: '40px' }}>
+                                  Subeen Chloe Jeong
+                                </div>
+                                <svg
+                                  width="140"
+                                  height="66"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  style={{
+                                    marginLeft: '50px',
+                                    marginTop: '-90px',
+                                  }}
+                                >
+                                  <path
+                                    d="M4.66 4.442C19.968 3.87 51.687 7.98 59.806 10.15c8.119 2.17 42.004 11.335 42.193 22.216.19 10.881-23.966 21.44-51.095 18.938C23.775 48.802 2.174 36.415 2.001 25.7 1.828 14.986 19.498 5.55 42.092 2.767c22.595-2.785 62.01 7.677 49.853 28.879"
+                                    stroke="#F3DBC7"
+                                    stroke-width="3"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  />
                                 </svg>
                               </p>
                             </div>
@@ -110,21 +127,49 @@ const CaseStudies = () => {
                       </h2>
                       <p className="h2Uppercase" data-margin="none">
                         <div className="split">
-                        <div className="line">i am a front-end developer with over a year of experience</div></div>
+                          <div className="line">
+                            i am a front-end developer with over a year of
+                            experience
+                          </div>
+                        </div>
                         <div className="split">
-                          <div className="line" style={{display: 'block', textAlign: 'start', width: '100%'}}>
-                            in building and maintaining website, working with React, JavaScript, HTML/CSS to deliver good customer experiences
+                          <div
+                            className="line"
+                            style={{
+                              display: 'block',
+                              textAlign: 'start',
+                              width: '100%',
+                            }}
+                          >
+                            in building and maintaining website, working with
+                            React, JavaScript, HTML/CSS to deliver good customer
+                            experiences
                           </div>
                         </div>
                         <div className="split">
                           <div className="line">
-                            Seeking for new opportunities and challenges that will expand my skill set.
+                            Seeking for new opportunities and challenges that
+                            will expand my skill set.
                           </div>
                         </div>
-                        <div className="split"><div className="line">Adept at contributing to a highly</div></div>
-                        <div className="split"><div className="line">collaborative work environment,</div></div>
-                        <div className="split"><div className="line">finding solutions,</div></div>
-                        <div className="split"><div className="line">and determining customer satisfaction.</div></div>
+                        <div className="split">
+                          <div className="line">
+                            Adept at contributing to a highly
+                          </div>
+                        </div>
+                        <div className="split">
+                          <div className="line">
+                            collaborative work environment,
+                          </div>
+                        </div>
+                        <div className="split">
+                          <div className="line">finding solutions,</div>
+                        </div>
+                        <div className="split">
+                          <div className="line">
+                            and determining customer satisfaction.
+                          </div>
+                        </div>
                       </p>
                     </div>
                   </div>
