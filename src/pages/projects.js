@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import '../styles/components/project.scss';
 import { gsap, TimelineLite, Power3 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Channel from '../assets/channel.png';
@@ -33,81 +32,81 @@ const CaseStudies = () => {
   });
 
   return (
-    <>
-      <div className="page">
+    <div className="page">
+      <div className="container">
         <div className="row">
-          <div className="PageLayout">
-            <div className="projectBannerMain">
-              <h2>
-                <span className="text">Projects</span>
-              </h2>
-              <div className="title"> 샤넬 프로젝트 </div>
-              <div className="projectDescription">
-                <div className="imgWrapper">
-                  <img src={Channel} alt="img" />
-                </div>
+          <div className="projectLayout">
+            <div className="PageLayout">
+              <section className="projectBannerMain">
+                <h2>
+                  <span className="text">Projects</span>
+                </h2>
+                <div className="title"> Channel Clone Project </div>
+                <div className="projectDescription">
+                  <div className="imgWrapper">
+                    <img className="img" src={Channel} alt="img" />
+                  </div>
 
-                <div className="videoBtnWrapper">
-                  <div className="DetailLayoutControl-CTAButtons-49iUa firstBtn">
-                    <a
-                      className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-                      href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
-                    >
-                      <button className="css-1kopvh6">VIEW VIDEO</button>
-                    </a>
+                  <div className="videoBtnWrapper">
+                    <div className="DetailLayoutControl-CTAButtons-49iUa firstBtn">
+                      <a
+                        className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
+                        href="https://www.youtube.com/watch?v=A-BaNR3fjeI&t=3s"
+                      >
+                        <button className="css-1kopvh6">VIEW VIDEO</button>
+                      </a>
+                    </div>
+
+                    <div className="DetailLayoutControl-CTAButtons-49iUa">
+                      <a
+                        className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
+                        href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
+                      >
+                        <button className="css-1kopvh6">Project Review</button>
+                      </a>
+                    </div>
                   </div>
-                  {/** */}
-                  <div className="DetailLayoutControl-CTAButtons-49iUa">
-                    <a
-                      className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-                      href="https://github.com/wecode-bootcamp-korea/9-No.4-frontend"
-                    >
-                      <button className="css-1kopvh6">Project Review</button>
-                    </a>
-                  </div>
-                  {/** */}
                 </div>
-              </div>
+              </section>
+              <section className="projectBannerMain">
+                <div className="projectDescription">
+                  <div className="textBox">
+                    <div className="title">
+                      <h2 className="text">Projects</h2>
+                      <p> Air bnb Clone Project </p>
+                    </div>
+                  </div>
+                  <div className="imgWrapper">
+                    <img src={Airbnb} className="img" alt="img" />
+                  </div>
+
+                  <div className="videoBtnWrapper">
+                    <div className="DetailLayoutControl-CTAButtons-49iUa firstBtn">
+                      <a
+                        className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
+                        href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                      >
+                        <button className="css-1kopvh6">VIEW VIDEO</button>
+                      </a>
+                    </div>
+
+                    <div className="DetailLayoutControl-CTAButtons-49iUa">
+                      <a
+                        className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
+                        href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                      >
+                        <button className="css-1kopvh6">Project Review</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="intro"></div>
+              </section>
             </div>
-            <section className="projectBannerMain">
-              <div className="projectDescription">
-                <div className="textBox">
-                  <div className="title">
-                    <h2 className="text">Projects</h2>
-                    <p>에어비앤비 프로젝트 </p>
-                  </div>
-                </div>
-                <div className="imgWrapper">
-                  <img src={Airbnb} className="img" alt="img" />
-                </div>
-
-                <div className="videoBtnWrapper">
-                  <div className="DetailLayoutControl-CTAButtons-49iUa firstBtn">
-                    <a
-                      className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-                      href="https://www.youtube.com/watch?v=28Q003gHF4Q"
-                    >
-                      <button className="css-1kopvh6">VIEW VIDEO</button>
-                    </a>
-                  </div>
-                  {/** */}
-                  <div className="DetailLayoutControl-CTAButtons-49iUa">
-                    <a
-                      className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-                      href="https://www.youtube.com/watch?v=28Q003gHF4Q"
-                    >
-                      <button className="css-1kopvh6">Project Review</button>
-                    </a>
-                  </div>
-                  {/** */}
-                </div>
-              </div>
-              <div className="intro"></div>
-            </section>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

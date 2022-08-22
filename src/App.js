@@ -5,14 +5,12 @@ import './styles/App.scss';
 import Header from './components/header';
 import Navigation from './components/navigation';
 import Projects from './pages/projects';
-import CaseStudies from './pages/caseStudies';
 import Approach from './pages/approach';
 import About from './pages/about';
 import Home from './pages/home';
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },
-  { path: '/case-studies', name: 'caseStudies', Component: CaseStudies },
   { path: '/approach', name: 'approach', Component: Approach },
   { path: '/projects', name: 'Projects', Component: Projects },
   { path: '/about', name: 'about', Component: About },
