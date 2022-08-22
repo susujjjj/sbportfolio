@@ -48,7 +48,7 @@ html {
   .v-center {
     //header부분
     align-items: center;
-    padding: 0 18px; //임시 주석
+    padding: 0 22px; //임시 주석
   }
   .space-between {
     justify-content: space-between;
@@ -189,7 +189,8 @@ html {
 
           background-color: $white;
           color: #222;
-          padding: auto 1rem;
+          margin-left: 0.2rem;
+          padding: auto 2rem;
           height: auto;
           // color: #fff;
           // padding-left: 1rem;
@@ -414,6 +415,7 @@ html {
       background: $black;
       // border: 1px solid orange;
       /* about.js design*/
+      width: -webkit-fill-available;
       height: 90vh;
 
       /* about.js design*/
@@ -434,13 +436,11 @@ html {
 
           background-color: black;
           color: #fff;
-          // padding: auto 1rem;
+          padding-left: 0.6rem; // padding: auto 1rem;
           // height: auto;
-
           // @include media('<=phone') {
           //   padding-left: 0.5rem;
           // }
-
           #intro {
             .main-wrapper {
               .text {
@@ -467,6 +467,7 @@ html {
           .resumeWrapper {
             .box {
               border-bottom: 1px solid white;
+              margin-right: 0.6rem;
             }
             .box:last-child {
               border-bottom: none;
@@ -494,11 +495,14 @@ html {
           //   padding-left: 0.5rem;
           // }
 
+          // background-color: black;
+          // color: #fff;
+          // padding: auto 1rem;
+          // height: auto;
+
           background-color: black;
           color: #fff;
-          padding: auto 1rem;
-          height: auto;
-
+          padding-left: 1rem;
           .contactIntro {
             color: rgb(255, 255, 255);
             font-family: inter;
