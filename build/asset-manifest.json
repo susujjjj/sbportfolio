@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sbportfolio/static/css/main.bef89a7d.chunk.css",
-    "main.js": "/sbportfolio/static/js/main.520ce725.chunk.js",
-    "main.js.map": "/sbportfolio/static/js/main.520ce725.chunk.js.map",
+    "main.css": "/sbportfolio/static/css/main.ed04e971.chunk.css",
+    "main.js": "/sbportfolio/static/js/main.165e86ad.chunk.js",
+    "main.js.map": "/sbportfolio/static/js/main.165e86ad.chunk.js.map",
     "runtime-main.js": "/sbportfolio/static/js/runtime-main.18244425.js",
     "runtime-main.js.map": "/sbportfolio/static/js/runtime-main.18244425.js.map",
     "static/js/2.6d15985e.chunk.js": "/sbportfolio/static/js/2.6d15985e.chunk.js",
     "static/js/2.6d15985e.chunk.js.map": "/sbportfolio/static/js/2.6d15985e.chunk.js.map",
     "index.html": "/sbportfolio/index.html",
-    "precache-manifest.239b505f05ee44c7ffc064bdebe72b1f.js": "/sbportfolio/precache-manifest.239b505f05ee44c7ffc064bdebe72b1f.js",
+    "precache-manifest.7160ecba0d5c65b93cd9b5ad602791ca.js": "/sbportfolio/precache-manifest.7160ecba0d5c65b93cd9b5ad602791ca.js",
     "service-worker.js": "/sbportfolio/service-worker.js",
-    "static/css/main.bef89a7d.chunk.css.map": "/sbportfolio/static/css/main.bef89a7d.chunk.css.map",
+    "static/css/main.ed04e971.chunk.css.map": "/sbportfolio/static/css/main.ed04e971.chunk.css.map",
     "static/js/2.6d15985e.chunk.js.LICENSE.txt": "/sbportfolio/static/js/2.6d15985e.chunk.js.LICENSE.txt",
     "static/media/airbnb.gif": "/sbportfolio/static/media/airbnb.f8228ca3.gif",
     "static/media/arrow-right.2b839937.svg": "/sbportfolio/static/media/arrow-right.2b839937.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.18244425.js",
     "static/js/2.6d15985e.chunk.js",
-    "static/css/main.bef89a7d.chunk.css",
-    "static/js/main.520ce725.chunk.js"
+    "static/css/main.ed04e971.chunk.css",
+    "static/js/main.165e86ad.chunk.js"
   ]
 }
