@@ -10,7 +10,7 @@ import About from './pages/about';
 import Home from './pages/home';
 
 const routes = [
-  { path: '/', name: 'Home', Component: Home },
+  { path: '/sbportfolio', name: 'Home', Component: Home },
   { path: '/approach', name: 'approach', Component: Approach },
   { path: '/projects', name: 'Projects', Component: Projects },
   { path: '/about', name: 'about', Component: About },
