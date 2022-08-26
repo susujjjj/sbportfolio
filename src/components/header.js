@@ -24,7 +24,7 @@ const Header = ({ history, dimensions }) => {
       <div className="container">
         <div className="row v-center space-between">
           <div className="logo">
-            <NavLink to="/" exact>
+            <NavLink to="/sbportfolio" exact>
               Chloe's Portfolio
             </NavLink>
           </div>
