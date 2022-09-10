@@ -179,7 +179,7 @@ const About = () => {
                   </div>
                   <div className="box">
                     <h2>LANGUAGES</h2>
-                    <p>- Korean</p>
+                    <p>- Korean (native)</p>
                     <p>- English (intermediate)</p>
                     <p>- Chinese (intermediate)</p>
                   </div>
