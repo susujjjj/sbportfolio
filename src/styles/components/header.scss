@@ -4,11 +4,16 @@
   height: 128px;
   z-index: 4;
 
+  @include media('<=desktop') {
+    height: 85px;
+  }
+
   @include media('<=phone') {
     height: 96px;
   }
   .logo {
     a {
+      position: relative;
       font-size: 1.2rem;
       letter-spacing: 0.5rem;
       color: $black;

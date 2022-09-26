@@ -43,11 +43,7 @@ const About = () => {
                       <span className="split">
                         <div id="model-wrapper" className="content">
                           <div className="caption item-fade">
-                            <span
-                              className="h2Uppercase"
-                              data-margin="none"
-                              data-subtitle-left="Michelangelo's David"
-                            >
+                            <span className="h2Uppercase">
                               <span className="line">Hello. I am </span>
                               <div style={{ fontSize: '40px' }}>
                                 Subeen Chloe Jeong
@@ -74,11 +70,11 @@ const About = () => {
                         </div>
                       </span>
                     </h2>
-                    <span className="h2Uppercase" data-margin="none">
+                    <div className="h2Uppercase" data-margin="none">
                       <div className="split">
                         <div className="line">
-                          i am a front-end developer with over a year of
-                          experience
+                          I am a front-end developer with over a year of
+                          experience, i love to work with React.
                         </div>
                       </div>
                       <div className="split">
@@ -91,79 +87,123 @@ const About = () => {
                           }}
                         >
                           in building and maintaining website, working with
-                          React, JavaScript, HTML/CSS to deliver good customer
-                          experiences
+                          React, JavaScript, HTML/CSS and i always consider to
+                          create and maintain a better code base for
+                          reusability.
                         </div>
                       </div>
                       <div className="split">
                         <div className="line">
-                          Seeking for new opportunities and challenges that will
-                          expand my skill set.
+                          Currently seeking for new opportunities and
+                          challenges!
                         </div>
                       </div>
-                      <div className="split">
-                        <div className="line">
-                          Adept at contributing to a highly
-                        </div>
-                      </div>
-                      <div className="split">
-                        <div className="line">
-                          collaborative work environment,
-                        </div>
-                      </div>
-                      <div className="split">
-                        <div className="line">finding solutions,</div>
-                      </div>
-                      <div className="split">
-                        <div className="line">
-                          and determining customer satisfaction.
-                        </div>
-                      </div>
-                    </span>
+                    </div>
                   </div>
-                  <div>
+                  <div className="contentBox">
                     <h2>EXPERIENCE</h2>
                     <span>
-                      Rye&Catchers (Seoul, South Korea) [April 2022 - Present]
+                      Rye&Catchers (Seoul, South Korea) [April 2022 - July 2022]
                     </span>
-                    <span>
-                      - In Progress with psychology consultation service project
-                      (React, TypeScript, hooks, styled-components,
-                      redux-toolkit)
-                    </span>
-                    <span>- Seperated Dialog & alert Components</span>
+                    <p className="descriptionCompany">
+                      Rye&Catchers is a Systems Integration company. i worked as
+                      part of team of psychology consultation service
+                      application. (react, typescript, hooks, styled-components,
+                      redux-toolkit, context api, vite, babel, REST, gitlab,
+                      swagger, google meet for meeting)
+                    </p>
                     <p>
-                      - Gained experience in resolving conflicts with colleagues
-                      professionally using gitLab
+                      - Reduced server traffic and CPU usage using amazon S3,
+                      implemented images & files upload, update, removal of
+                      duplicate files
+                    </p>
+                    <p>- Redeveloped page structure with context api</p>
+                    <p>
+                      - Developed comments CRUD, sending messages & emails to
+                      specialist counselor, page UI.
+                    </p>
+                    <p>
+                      - Developed design system and fill out the readme /
+                      button, input component (storybook, typescript, react,
+                      using OOP with emotion styled-component)
+                    </p>
+                    <p>
+                      - Professional experience with leading team members with
+                      the use of Gitlab
                     </p>
                     <div style={{ paddingTop: '20px' }}></div>
                     <p>
                       Inhandplus (Seoul, South Korea) [November 2022 - January
                       2022]
                     </p>
-                    <p>
-                      - Completed admin website project with Merck china, Seoul
-                      National University (chart.js, recharts.js, react,
-                      styled-component, TypeScript)
+                    <p className="descriptionCompany">
+                      InhandPlus is a Korean startup, to solve the medication
+                      non-adherence problem, develop medication-use smartwatch
+                      and AI-based medication management solution. I mostly
+                      developed medication adherence management admin page for
+                      Merck China, Seoul University and other major universities
+                      in South Korea.
                     </p>
                     <p>
-                      - Gained experience in resolving conflicts with colleagues
-                      professionally using gitLab
+                      Seoul University medication admin website project 2021.08
+                      - 2021.12 (Stack: Highcharts, React, recoil,
+                      styled-component, typescript, bit.dev, storybook, web
+                      pack, babel, REST Collaboration tools: Azure, Zeplin,
+                      using airbnb ESlint, Prettier) policy, postman
                     </p>
                     <p>
-                      - Improved ability in debugging to improve website
-                      performance and user experience
+                      - Gained experience in working with designer & PM
+                      intimately
+                    </p>
+                    <p>
+                      - Implemented date picker & date slide picker without
+                      library
+                    </p>
+                    <p>
+                      - Developed UI components using Storybook for building a
+                      design system and modularization using bit.dev
+                    </p>
+                    <p>
+                      Project Redevelopment 2021.07 - 2021.08 (ver.3.0) (Stack:
+                      react, redux thunk, styled-component, typescript, bit.dev,
+                      storybook, webpack, babel, REST)
+                    </p>
+                    <p>
+                      - Implemented different UI depending on user's
+                      affiliation, added toast popup, debugging and download
+                      excel of participant's data
+                    </p>
+                    <p>
+                      - applied https with Nginx when deploy web application
+                    </p>
+                    <p>
+                      - Medication admin website project (react,
+                      styled-component, typescript, redux thunk, Recharts)
+                    </p>
+                    <p>
+                      Implemented doughnut, line, scatter chart about
+                      participant's information, connected inquiry chatbot using
+                      Channel.io
+                    </p>
+                    <p>
+                      Merck China Project 2020.11 - 2021.02 (Internship: Nov
+                      2020 - Feb 2021) (Stack: React, javascript, materialUI)
+                    </p>
+                    <p>Redesigned date picker (with date picker airbnb)</p>
+                    <p>
+                      Granted an opportunity to implement project A - Z
+                      (routing, login, redirection, page development etc.)
                     </p>
                   </div>
                 </section>
                 <div className="resumeWrapper">
                   <div className="box">
                     <h2>SKILLS</h2>
-                    <p>- Javascript, HTML, CSS/SCSS/SASS</p>
-                    <p>- Typescript, React.js</p>
-                    <p>- Styled-component</p>
+                    <p>- HTML, CSS/SCSS/SASS</p>
+                    <p>- Javascript, Typescript, React.js</p>
+                    <p>- Styled-component, Emotion Styled-component</p>
                     <p>- MaterialUI Storybook, bit dev</p>
-                    <p>- Vue.js</p>
+                    <p>- mongoDB</p>
                     <p>- gitHub, gitLab</p>
                   </div>
                   <div className="box">

@@ -21,8 +21,7 @@ html {
 }
 
 .container {
-  width: 1560px;
-  min-width: 1560px;
+  max-width: 1920px;
   margin: 0 auto;
   height: 100%;
   @include media('<=1560px') {
@@ -31,7 +30,9 @@ html {
   }
   @include media('<=desktop') {
     width: 1080px;
-    // min-width: 1080px; //임시 주석
+  }
+  @include media('<=tablet') {
+    max-width: 1365px;
   }
   @include media('<=1080px') {
     width: 100%;
@@ -40,15 +41,11 @@ html {
   .row {
     display: flex;
     height: 100%;
-
-    @include media('<=phone') {
-      //padding: 0 16px;//임시 주석
-    }
   }
   .v-center {
     //header부분
     align-items: center;
-    padding: 0 22px; //임시 주석
+    padding: 0 22px;
   }
   .space-between {
     justify-content: space-between;
@@ -141,63 +138,35 @@ html {
 }
 
 .page {
-  // height: 100vh;
-  // width: 100%;
-  // background: $white;
-  // height: 100vh;
   width: 100%;
   background: $white;
   padding-top: 5rem;
-  @include media('<=tablet') {
-    // padding-top: 7rem;
-  }
 
-  @include media('<=phone') {
-    // padding-top: 7rem;
-  }
   .row {
     display: flex;
     align-items: center;
     padding-top: 1rem;
 
-    ////////////////////////
-
     .projectLayout {
-      // width: 100%;
-      // // height: 50vh;
       background: $white;
-      // // border: 1px solid orange;
-      // /* about.js design*/
+      /* about.js design*/
       height: 90vh;
+      @include media('<=LGdesktop') {
+        padding-left: 2rem;
+      }
+
+      @include media('<=phone') {
+        padding-left: 0rem;
+      }
 
       .PageLayout {
-        /*aboutpage*/
-
-        /**** contact ****/
-
         /**** project  ****/
         .projectBannerMain {
-          // padding-top: 2rem;
-          // width: 100vw;
-          // height: 70vh;
-          // background-color: #fff;
-          // color: #000;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.1rem;
-          // }
-
           background-color: $white;
           color: #222;
           margin-left: 0.2rem;
           padding: auto 2rem;
           height: auto;
-          // color: #fff;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.5rem;
-          // }
-
           .imgWrapper {
             width: 100%;
 
@@ -206,12 +175,12 @@ html {
             }
           }
           @include media('<=desktop') {
+            //태블릿이 여기에속함
             padding-left: 1rem;
-
             .imgWrapper {
               width: 100%;
               .img {
-                max-width: 30rem;
+                max-width: 45rem;
               }
             }
           }
@@ -220,7 +189,8 @@ html {
             .imgWrapper {
               width: 100%;
               .img {
-                max-width: 16rem;
+                max-width: 20rem;
+                min-width: 15rem;
               }
             }
           }
@@ -230,12 +200,12 @@ html {
             .imgWrapper {
               width: 100%;
               img {
-                width: 22rem;
+                max-width: 23rem;
               }
             }
           }
           .projectDescription {
-            width: 1200px;
+            width: 100%;
             @include media('<=phone') {
               width: 100%;
             }
@@ -422,26 +392,16 @@ html {
       .PageLayout {
         /*aboutpage*/
         .aboutBannerMain {
-          // padding: 1rem 0;
-          // padding-top: 8rem;
-          // width: 100vw;
-          //height: 150vh;
-
-          // background-color: black;
-          // color: #fff;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.5rem;
-          // }
-
           background-color: black;
           color: #fff;
           padding-left: 0.6rem; // padding: auto 1rem;
-          // height: auto;
-          // @include media('<=phone') {
-          //   padding-left: 0.5rem;
-          // }
           #intro {
+            .model-wrapper {
+              line-height: 1.5rem;
+            }
+            .descriptionCompany {
+              color: #fbc7cf;
+            }
             .main-wrapper {
               .text {
                 .headingUppercaseInline {
@@ -458,6 +418,7 @@ html {
                     display: block;
                     text-align: start;
                     width: 100%;
+                    line-height: 2rem;
                   }
                 }
               }
@@ -478,28 +439,6 @@ html {
 
         /**** contact ****/
         .contactBannerMain {
-          // padding-top: 8rem;
-          // height: 90%;
-          // background-color: black;
-          // color: #fff;
-          // padding: 15rem 0 0 10rem;
-
-          // padding: 1rem 0;
-          // padding-top: 8rem;
-          // width: 100vw;
-          // height: 90%;
-          // background-color: black;
-          // color: #fff;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.5rem;
-          // }
-
-          // background-color: black;
-          // color: #fff;
-          // padding: auto 1rem;
-          // height: auto;
-
           background-color: black;
           color: #fff;
           padding-left: 1rem;
@@ -525,7 +464,6 @@ html {
               display: flex;
               margin-bottom: 24px;
               align-items: flex-start;
-              // width: 123%; //130%;
               height: 100%;
             }
             .at-svg {
@@ -590,25 +528,10 @@ html {
 
         /**** project  ****/
         .projectBannerMain {
-          // width: 100vw;
-          // height: 70vh;
-          // background-color: #fff;
-          // color: #000;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.1rem;
-          // }
-
           background-color: black;
           color: #fff;
           padding: auto 1rem;
           height: auto;
-          // color: #fff;
-          // padding-left: 1rem;
-          // @include media('<=phone') {
-          //   padding-left: 0.5rem;
-          // }
-
           .imgWrapper {
             width: 100%;
             img {
@@ -616,18 +539,16 @@ html {
             }
           }
           @include media('<=desktop') {
-            padding-left: 1rem;
-            // border: 1px solid red;
+            padding-left: 2rem;
             .imgWrapper {
               width: 100%;
               img {
-                width: 55rem;
+                max-width: 40rem;
               }
             }
           }
           @include media('<=tablet') {
             padding-left: 1rem;
-            // border: 1px solid red;
             .imgWrapper {
               width: 100%;
               img {
@@ -638,7 +559,6 @@ html {
 
           @include media('<=phone') {
             padding-left: 1rem;
-            // border: 1px solid red;
             .imgWrapper {
               width: 100%;
               img {
@@ -660,13 +580,6 @@ html {
               .DetailLayoutControl-CTAButtons-49iUa {
                 align-items: center;
                 flex-basis: 18%;
-                // flex-direction: row;
-                // justify-content: flex-end;
-                // order: unset;
-                // padding-bottom: 0;
-                // padding-right: 5%;
-                // margin: 0 auto;
-
                 .css-1kopvh6 {
                   width: auto;
                   height: auto;

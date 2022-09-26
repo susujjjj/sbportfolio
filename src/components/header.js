@@ -6,6 +6,7 @@ import { openMenu, closeMenu } from '../animations/menuAnimations';
 
 // Define reducer
 const Header = ({ history, dimensions }) => {
+  console.log(dimensions, 'dimensions?');
   const [menuState, setMenuState] = useState({ menuOpened: false });
   useEffect(() => {
     //Listening for page changes.

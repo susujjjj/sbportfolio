@@ -8,6 +8,10 @@ nav {
   position: fixed;
   overflow: hidden;
   background: $babyPink;
+  @include media('<=desktop') {
+    height: 40rem;
+    overflow: visible;
+  }
 
   a {
     position: relative;
@@ -24,6 +28,7 @@ nav {
     }
     &:hover {
       color: pink;
+
       &:after {
         width: 100%;
         left: 0;
@@ -32,10 +37,15 @@ nav {
     }
   }
   .nav-columns {
-    transform: translateY(125px);
-    display: flex;
+    transform: translateY(120px);
     padding: 0 32px;
-    margin-bottom: 20rem;
+    @include media('<=desktop') {
+      transform: translateY(45px);
+    }
+
+    @include media('<=tablet') {
+      transform: translateY(120px);
+    }
 
     @include media('<=654px') {
       flex-direction: column;
@@ -48,6 +58,7 @@ nav {
       @include media('<=654px') {
         width: 100%;
       }
+
       &:last-child {
         width: 55%;
         @include media('<=654px') {

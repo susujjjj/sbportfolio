@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="container">
         <div className="nav-columns">
           <div className="nav-column">
-            <div className="nav-label">Menu</div>
+            <div className="nav-label"></div>
             <ul className="nav-links">
               <li>
                 <NavLink to="/projects" exact>
@@ -26,7 +26,7 @@ const Navigation = () => {
               </li>
             </ul>
           </div>
-          <div className="nav-column"></div>
+          {/* <div className="nav-column"></div> */}
         </div>
       </div>
     </nav>
