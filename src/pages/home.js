@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import IntroOverlay from '../components/introOverlay';
+//import IntroOverlay from '../components/introOverlay';
 import Banner from '../components/banner';
-import Cases from '../components/cases';
 import gsap from 'gsap';
 
 let tl = gsap.timeline();
@@ -61,9 +60,7 @@ const Home = ({ dimensions }) => {
 
   return (
     <>
-      {animationComplete === false ? <IntroOverlay /> : ''}
       <Banner />
-      <Cases />
     </>
   );
 };
