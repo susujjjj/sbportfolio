@@ -93,7 +93,7 @@ const CaseStudies = () => {
                     <div className="DetailLayoutControl-CTAButtons-49iUa">
                       <a
                         className="ViewDemoSiteButton-ViewDemoSiteButton-a5vzN css-1uc6x06"
-                        href="https://www.youtube.com/watch?v=28Q003gHF4Q"
+                        href="https://velog.io/@rhftnqls/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84"
                       >
                         <button className="css-1kopvh6">Project Review</button>
                       </a>
