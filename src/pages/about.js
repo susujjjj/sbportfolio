@@ -106,11 +106,11 @@ const About = () => {
                       Rye&Catchers (Seoul, South Korea) [April 2022 - July 2022]
                     </span>
                     <p className="descriptionCompany">
-                      Rye&Catchers is a Systems Integration company. i worked as
-                      part of team of psychology consultation service
-                      application. (react, typescript, hooks, styled-components,
-                      redux-toolkit, context api, vite, babel, REST, gitlab,
-                      swagger, google meet for meeting)
+                      Rye&Catchers is a Systems Integration company. I worked as
+                      part of a team of psychology consultation service
+                      applications. (react, typescript, hooks,
+                      styled-components, redux-toolkit, context API, Vite,
+                      babel, REST, GitLab, swagger, google meet for the meeting)
                     </p>
                     <p>
                       - Reduced server traffic and CPU usage using amazon S3,
@@ -133,16 +133,16 @@ const About = () => {
                     </p>
                     <div style={{ paddingTop: '20px' }}></div>
                     <p>
-                      Inhandplus (Seoul, South Korea) [November 2022 - January
+                      InhandPlus (Seoul, South Korea) [November 2022 - January
                       2022]
                     </p>
                     <p className="descriptionCompany">
                       InhandPlus is a Korean startup, to solve the medication
-                      non-adherence problem, develop medication-use smartwatch
-                      and AI-based medication management solution. I mostly
-                      developed medication adherence management admin page for
-                      Merck China, Seoul University and other major universities
-                      in South Korea.
+                      non-adherence problem, develops a medication-use
+                      smartwatch and AI-based medication management solution. I
+                      mostly developed a medication adherence management admin
+                      page for Merck China, Seoul University, and other major
+                      universities in South Korea.
                     </p>
                     <p>
                       Seoul University medication admin website project 2021.08
@@ -189,6 +189,7 @@ const About = () => {
                       Merck China Project 2020.11 - 2021.02 (Internship: Nov
                       2020 - Feb 2021) (Stack: React, javascript, materialUI)
                     </p>
+                    <p>Applied https with Nginx when deploy web application</p>
                     <p>Redesigned date picker (with date picker airbnb)</p>
                     <p>
                       Granted an opportunity to implement project A - Z
