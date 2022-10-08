@@ -174,7 +174,7 @@ const About = () => {
                       excel of participant's data
                     </p>
                     <p>
-                      - applied https with Nginx when deploy web application
+                      - applied https with Nginx when deploying web application
                     </p>
                     <p>
                       - Medication admin website project (react,
