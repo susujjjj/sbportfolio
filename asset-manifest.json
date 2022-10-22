@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/sbportfolio/static/css/main.039c81ca.css",
+    "main.js": "/sbportfolio/static/js/main.bc47443a.js",
+    "static/media/airbnb.gif": "/sbportfolio/static/media/airbnb.6a1e237816c43cf40ba4.gif",
+    "static/media/wetodo.gif": "/sbportfolio/static/media/wetodo.5db26c11db7cd6ed26c5.gif",
+    "static/media/channel.png": "/sbportfolio/static/media/channel.ea764ed9e6d4df844947.png",
+    "static/media/up-arrow-circle.svg": "/sbportfolio/static/media/up-arrow-circle.815ca3d15360e29608646c30462fdcac.svg",
+    "index.html": "/sbportfolio/index.html",
+    "static/media/arrow-right.svg": "/sbportfolio/static/media/arrow-right.8710bc65b90b99f254f72d38f68f70a5.svg",
+    "main.039c81ca.css.map": "/sbportfolio/static/css/main.039c81ca.css.map",
+    "main.bc47443a.js.map": "/sbportfolio/static/js/main.bc47443a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.039c81ca.css",
+    "static/js/main.bc47443a.js"
+  ]
+}
